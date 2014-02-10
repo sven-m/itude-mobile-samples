@@ -1,0 +1,18 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<Model>
+        <Documents>
+            <!-- the MBMemoryDataHandler gets a copy of the Document from the file system (CATALOG.xml) and then keeps
+             it in memory until the app is stopped. -->
+            <Document name="MBException" autoCreate="TRUE" dataManager="MBMemoryDataHandler">
+                <Element name="Exception" minOccurs="1">
+                    <Attribute name="name" type="string" />
+                    <Attribute name="description" type="string" />
+                    <Attribute name="origin" type="string" />
+                    <Attribute name="outcome" type="string" />
+                    <Attribute name="path" type="string" />
+                    <Attribute name="type" type="string" />
+                </Element>
+            </Document>            
+        </Documents>
+    </Model>
+</Configuration>

@@ -1,0 +1,26 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+    <Model>
+        <Domains>
+            <Include name="domains"/>
+        </Domains>
+        <Documents>
+            <Include name="documents"/>
+            <Include name="DOC-exception"/>
+        </Documents>
+    </Model>
+    <Controller>
+        <Actions>
+            <Include name="actions"/>
+        </Actions>
+        <Wiring>
+            <Include name="outcomes"/>
+        </Wiring>
+    </Controller>
+    <View>	
+        <Dialogs>
+            <Include name="dialogs"/>
+        </Dialogs>
+		<Include name="pages"/>
+		<Include name="PAGE-exception"/>
+    </View>
+</Configuration>

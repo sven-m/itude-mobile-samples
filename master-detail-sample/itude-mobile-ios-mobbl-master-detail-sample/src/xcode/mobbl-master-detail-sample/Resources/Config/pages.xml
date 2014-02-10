@@ -1,0 +1,8 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<View>	
+        <Include name="PAGE-plant-detail"/>
+        <Include name="PAGE-catalog"/>
+
+        <Include name="PAGE-exception"/>
+    </View>
+</Configuration>
