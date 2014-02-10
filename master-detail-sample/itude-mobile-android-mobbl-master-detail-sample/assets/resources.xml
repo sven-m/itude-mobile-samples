@@ -1,0 +1,6 @@
+<Resources>
+    <Resource id="config" url="file://config"/>
+	<Resource id="whitelabel-splashscreen" url="file://whitelabel_splashscreen.png" />
+	<Resource id="arrow" url="file://arrow.png" />
+	<Bundle languageCode="nl" url="file://texts/texts-nl.xml"/>
+</Resources> 
