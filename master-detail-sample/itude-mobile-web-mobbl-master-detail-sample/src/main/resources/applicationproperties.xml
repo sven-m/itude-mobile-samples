@@ -1,0 +1,4 @@
+<Application>
+	<Property name="keepHistory" value="false"/>
+	<Property name="localeCode" value="nl_NL"/>
+</Application>

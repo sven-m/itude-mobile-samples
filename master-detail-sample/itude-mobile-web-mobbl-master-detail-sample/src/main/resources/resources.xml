@@ -1,0 +1,8 @@
+<Resources>
+  <Resource id="config" url="resource:com/itude/mobile/template/config.xml"/>
+  <Resource id="endpoints" url="resource:com/itude/mobile/template/endpoints.xml"/>
+  
+  <Bundle languageCode="nl" url="resource:com/itude/mobile/template/texts/texts-nl.xml"/>
+  
+  
+</Resources>

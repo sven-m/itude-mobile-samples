@@ -1,0 +1,188 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itude.mobile.web.mobbl</groupId>
+	<version>0.0.0.1</version>
+	<artifactId>blueprint-app</artifactId>
+	<packaging>war</packaging>
+	<name>Web Master Detail Sample application</name>
+	<description>Web Master Detail Sample application</description>
+	<url>http://mobbl.org/</url>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>Itude Mobile B.V</name>
+		<url>http://www.itude.com/</url>
+	</organization>
+	<developers>
+		<developer>
+			<name>Wiebe Elsinga</name>
+			<id>w.elsinga</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+        	<name>The Apache Software License, Version 2.0</name>
+            <url>LICENSE</url>
+        </license>
+    </licenses>
+	
+	<dependencies>
+        <dependency>
+			<groupId>com.itude.mobile.web.mobbl</groupId>
+			<artifactId>mobbl-core-lib</artifactId>
+			<version>${core.lib.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tuckey</groupId>
+			<artifactId>urlrewritefilter</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+	</dependencies>
+	
+	<issueManagement>
+		<url>https://github.com/ItudeMobile/itude-mobile-samples/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<scm>
+		<url>https://github.com/ItudeMobile/itude-mobile-samples</url>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git</developerConnection>
+	</scm>
+
+	<build>
+	    
+	    <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>net.alchim31.maven</groupId>
+                                        <artifactId>yuicompressor-maven-plugin</artifactId>
+                                        <versionRange>[1.1,)</versionRange>
+                                        <goals>
+                                            <goal>compress</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.codehaus.mojo</groupId>
+										<artifactId>properties-maven-plugin</artifactId>
+                                        <versionRange>[1.0-alpha-2,)</versionRange>
+										<goals>
+                                            <goal>write-project-properties</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+                <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.9.1</version>
+					<configuration>
+            	    	<quiet>true</quiet>
+                	    <encoding>${project.build.sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
+            </plugins>
+        </pluginManagement>
+	    
+		<plugins>
+		    <plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>net.alchim31.maven</groupId>
+				<artifactId>yuicompressor-maven-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<nosuffix>true</nosuffix>
+					<aggregations>
+						<aggregation>
+							<insertNewLine>true</insertNewLine>
+							<output>${project.build.directory}/${project.build.finalName}/css/style_template_${project.version}.css</output>
+							<includes>
+								<include>**/style_template.css</include>
+							</includes>
+						</aggregation>
+						<aggregation>
+							<insertNewLine>true</insertNewLine>
+							<output>${project.build.directory}/${project.build.finalName}/css/style_template_simple_${project.version}.css</output>
+							<includes>
+								<include>**/style_template_simple.css</include>
+							</includes>
+						</aggregation>
+					</aggregations>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>write-project-properties</goal>
+						</goals>
+						<configuration>
+							<!-- The properties who are written are the ones between <properties> 
+								and </properties> below -->
+							<outputFile>
+								${project.build.outputDirectory}/META-INF/maven/${project.groupId}/${project.artifactId}/pom.properties
+			              </outputFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<properties>
+		<!-- In order to make #{env.projectVersion} work -->
+		<version>${project.version}</version>
+		<core.lib.version>0.1.1.2-SNAPSHOT</core.lib.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<repositories>
+		<repository>
+			<id>itudemobile-github-repository</id>
+			<name>ItudeMobile Github repository</name>
+			<url>http://mobbl.org/maven-repository/releases</url>
+		</repository>
+	</repositories>
+
+</project>
