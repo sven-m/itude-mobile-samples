@@ -17,50 +17,6 @@
 <composite:implementation>
 	<c:if test="#{!cc.attrs.panel.hidden}">
 		<c:choose>
-			<c:when test="#{cc.attrs.panel.type eq 'MATRIX'}">
-				<div class="MATRIX #{cc.attrs.panel.style}">
-					<c:forEach transient="true" items="#{cc.attrs.panel.children}"
-						var="child">
-						<cc:component component="#{child}" />
-					</c:forEach>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'MATRIX-ROW'}">
-				<div
-					class="#{cc.attrs.panel.children[0].type eq 'MATRIX-CELL' ? 'MATRIX-ROW' : 'MATRIX-ROW-SMALL'} #{cc.attrs.panel.style}">
-					<c:forEach transient="true" items="#{cc.attrs.panel.children}"
-						var="child" varStatus="childCount">
-						<c:choose>
-							<c:when test="#{i:size(cc.attrs.panel.children) > 2}">
-								<div
-									class="COL#{i:size(cc.attrs.panel.children)}#{childCount.index eq 1 ? '1' : ''} overflowAuto">
-									<cc:component component="#{child}" />
-								</div>
-							</c:when>
-							<c:otherwise>
-								<cc:component component="#{child}" />
-							</c:otherwise>
-						</c:choose>
-					</c:forEach>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'MATRIX-CELL'}">
-				<div class="MATRIX-CELL">
-					<span class="ROW-TITLE"> <c:forEach transient="true"
-							items="#{cc.attrs.panel.children}" var="child">
-							<cc:component component="#{child}" />
-						</c:forEach>
-					</span>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'MATRIX-HEADER'}">
-				<div class="header">
-					<c:forEach transient="true" items="#{cc.attrs.panel.children}"
-						var="child">
-						<cc:component component="#{child}" />
-					</c:forEach>
-				</div>
-			</c:when>
 			<c:when test="#{cc.attrs.panel.type eq 'SECTION'}">
 				<c:if test="#{!empty cc.attrs.panel.title}">
 					<div class="header ">
@@ -174,12 +130,12 @@
 				</c:if>
 				<c:if test="#{cc.attrs.panel.outcomeName ne null}">
 					<h:outputLink value="link.jsf" includeViewParams="yes"
-						id="#{cc.attrs.panel.children[1].generatedId}">
+						id="#{cc.attrs.panel.generatedId}">
 						<f:param name="docId" value="#{currentView.docId}" />
 						<f:param name="outcome"
-							value="#{cc.attrs.panel.children[0].outcomeName}" />
-						<c:if test="#{!empty cc.attrs.panel.children[0].path}">
-							<f:param name="path" value="#{cc.attrs.panel.children[0].path}" />
+							value="#{cc.attrs.panel.outcomeName}" />
+						<c:if test="#{!empty cc.attrs.panel.absoluteDataPath}">
+							<f:param name="path" value="#{cc.attrs.panel.absoluteDataPath}" />
 						</c:if>
 						<div class="ROW #{cc.attrs.panel.style}">
 							<c:set value="#{cc.attrs.panel}" var="rowpanel" />
@@ -194,18 +150,12 @@
 									<div class="ROW-CONTENT">
 										<c:set value="#{rowpanel.children[1]}" var="linktitle"
 											scope="request" />
-										<c:if
-											test="#{rowpanel.document.documentName eq 'EXT-KoersenTopStijgersDalersGetResponse'}">
-											<div class="WL">
-												<cc:component component="#{rowpanel.children[2]}" />
-											</div>
-										</c:if>
 										<div
 											class="overflowAuto #{i:size(rowpanel.children) gt 3 ? 'ROWLINK-TITLE' : ''}">
 											<cc:component component="#{linktitle}" />
 										</div>
 										<c:if
-											test="#{rowpanel.document.documentName ne 'EXT-KoersenTopStijgersDalersGetResponse' and i:nonHiddenChildren(rowpanel) ne 0}">
+											test="#{i:nonHiddenChildren(rowpanel) ne 0}">
 											<div class="COL-WRAPPER">
 												<c:forEach transient="true" items="#{rowpanel.children}"
 													var="child" begin="2">
@@ -274,7 +224,7 @@
 											value="#{cc.attrs.panel.children[0].path}" />
 									</c:if>
 									<div
-										style="float: #{cc.attrs.panel.children[0].style eq 'BACK'?  'left':  'right'">
+										style="float: #{cc.attrs.panel.children[0].style eq 'BACK'?  'left':  'right'}">
 										<cc:component component="#{cc.attrs.panel.children[0]}" />
 									</div>
 									<div style="overflow: auto;">
@@ -338,57 +288,7 @@
 					</c:forEach>
 				</div>
 			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'PREVIEWTOPLIST'}">
-				<div class="PREVIEWTOPLIST #{cc.attrs.panel.style}">
-					<div class="TITLEMAIN">
-						<h:outputText value="#{cc.attrs.panel.title}" />
-					</div>
-					<c:forEach transient="true" items="#{cc.attrs.panel.children}"
-						var="child" varStatus="status">
-						<cc:component component="#{child}" />
-					</c:forEach>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'MOREROW'}">
-				<div class="TOPLISTROW #{cc.attrs.panel.style}">
-					<c:set value="#{cc.attrs.panel}" var="morerowpanel" />
-					<div class="TOPLISTROWLINK-REF">
-						<cc:button label="#{cc.attrs.panel.title}"
-							outcome="#{morerowpanel.children[0].outcomeName}" path="." />
-					</div>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'AHREFLINK'}">
-				<div class="TOPLISTROW #{cc.attrs.panel.style}">
-					<c:set value="#{cc.attrs.panel}" var="toplistrowpanel" />
-					<div class="TOPLISTROWLINK-REF">
-						<h:outputLink value="link.jsf" includeViewParams="yes"
-							class="ROWLINK">
-							<f:param name="docId" value="#{currentView.docId}" />
-							<f:param name="outcome"
-								value="#{toplistrowpanel.children[0].outcomeName}" />
-							<b><h:outputText value="#{toplistrowpanel.children[1].label}" /></b>
-						</h:outputLink>
-					</div>
-				</div>
-			</c:when>
-			<c:when test="#{cc.attrs.panel.type eq 'FORM'}">
-				<div class="ORDERFORM">
-					<div class="TOP">
-						<div class="RIGHT">
-							<form id="orderform" method="post"
-								action="#{cc.attrs.panel.style}">
-								<c:forEach transient="true" items="#{cc.attrs.panel.children}"
-									var="child" varStatus="status">
-									<cc:component component="#{child}" />
-								</c:forEach>
-								<input type="submit" value="Download" id="submitbutton"
-									disabled="disabled" />
-							</form>
-						</div>
-					</div>
-				</div>
-			</c:when>
+
 			<c:when test="#{cc.attrs.panel.type eq 'SCRIPT'}">
 				<div id="script" style="display: none">
 					<c:forEach transient="true" items="#{cc.attrs.panel.children}"
