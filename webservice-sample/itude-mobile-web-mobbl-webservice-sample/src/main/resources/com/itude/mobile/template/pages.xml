@@ -1,0 +1,6 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<View>	
+		<Include name="com/itude/mobile/template/pages/PAGE-plant-detail.xml"/>
+        <Include name="com/itude/mobile/template/pages/PAGE-catalog.xml"/>
+       </View>
+</Configuration>

@@ -2,10 +2,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itude.mobile.web.mobbl</groupId>
 	<version>0.0.0.1</version>
-	<artifactId>master-detail-sample</artifactId>
+	<artifactId>webservice-sample</artifactId>
 	<packaging>war</packaging>
-	<name>Web Master Detail Sample application</name>
-	<description>Web Master Detail Sample application</description>
+	<name>Web Webservice Sample application</name>
+	<description>Web WebService Sample application</description>
 	<url>http://mobbl.org/</url>
 	<inceptionYear>2014</inceptionYear>
 	<organization>
