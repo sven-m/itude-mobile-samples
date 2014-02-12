@@ -13,27 +13,5 @@
 #
 # Matching is done from top to bottom; i.e. the first match is used to determine the environment
 
-# ci.itude.com is the continuous integration server at 192.168.2.11
 
-192.168.2.11=ci
-ci*=ci
-
-#dev
-cristanlaptop=dev
-Cristan-PC=dev
-Berry-PC=dev
-berry-lapitude=dev
-ptomtude=dev
-Ricardo-de-Wildes-Macbook.local=dev
-Coen-Houtmans-MacBook-Pro.local=dev
-MacBook-Pro-van-Wiebe-Elsinga.local=dev
-
-#athena
-ip-10-224-87-118=dev
-ip-10-224-66-147=dev
-ip-10-227-111-241=dev
-
-#metis
-ip-10-48.162.109=dev
-
-*=production
+*=dev
