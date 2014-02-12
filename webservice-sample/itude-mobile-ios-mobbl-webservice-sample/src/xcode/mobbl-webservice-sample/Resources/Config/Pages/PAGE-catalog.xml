@@ -1,6 +1,6 @@
 <Configuration>
     <View>
-        <Page name="PAGE-catalog" document="CATALOG" title="Plant catalog">
+        <Page name="PAGE-catalog" document="CATALOG" title="Plants from a webservice">
             <Panel type="LIST">
                     <!-- the ForEach element creates a new for each element of type PLANT -->
                     <ForEach value="/PLANT" suppressRowComponent="TRUE">

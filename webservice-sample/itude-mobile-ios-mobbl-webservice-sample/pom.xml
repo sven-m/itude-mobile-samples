@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itude.mobile.ios.mobbl</groupId>
+	<artifactId>mobbl-master-detail-sample</artifactId>
+	<version>0.0.1.0-SNAPSHOT</version>
+	<packaging>xcode-app</packaging>
+	<name>iOS  Mobbl Master-Detail Sample</name>
+	<description>iOS  Mobbl Master-Detail sample app</description>
+	<url>http://www.itude.com</url>
+	<inceptionYear>2013</inceptionYear>
+	<developers>
+		<developer>
+			<name>Robin Puthli</name>
+			<id>r.puthli</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+	</developers>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.itude.mobile.ios.mobbl</groupId>
+			<artifactId>mobbl-core-framework</artifactId>
+			<version>${core.framework.version}</version>
+			<type>xcode-framework</type>
+		</dependency>
+	</dependencies>
+	
+	<issueManagement>
+		<url>https://github.com/ItudeMobile/itude-mobile-ios-mobbl-master-detail-sample/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	
+	<scm>
+		<url>https://github.com/ItudeMobile/itude-mobile-ios-mobbl-master-detail-sample</url>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-ios-mobbl-master-detail-sample.git</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-ios-mobbl-master-detail-sample.git</developerConnection>
+	</scm>
+
+	<build>
+		<plugins>
+	      <plugin>
+	        <groupId>com.sap.prd.mobile.ios.mios</groupId>
+	        <artifactId>xcode-maven-plugin</artifactId>
+	        <version>1.13.0</version>
+	        <extensions>true</extensions>
+			<configuration>
+				<sdks>
+		            <sdk>iphonesimulator</sdk>
+		            <sdk>iphoneos</sdk>
+    		    </sdks>
+    		    <target>mobbl-master-detail-sample</target>
+    	    	<skipVersionUpdate>true</skipVersionUpdate>
+			</configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
+	  
+	  <properties>
+        <core.framework.version>0.0.2.5-SNAPSHOT</core.framework.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>  
+	  
+	  <repositories>
+		<repository>
+			<id>itudemobile-github-repository</id>
+			<name>ItudeMobile Github repository</name>
+			<url>http://mobbl.org/maven-repository/releases</url>
+		</repository>
+	</repositories>
+	  
+</project>
+
+
+          
