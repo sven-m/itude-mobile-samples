@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.0.1" package="com.itude.mobile.mobbl.samples.masterdetail">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.0.1" package="com.itude.mobile.mobbl.samples.webservice">
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="11"/>
-
-    <application android:debuggable="true" android:name="com.itude.mobile.mobbl.core.MBApplicationCore" android:theme="@style/Theme.AppCompat.Light">
-
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+    <application android:debuggable="true" android:name="com.itude.mobile.mobbl.samples.masterdetail.WebserviceApplicationCore" android:theme="@style/Theme.AppCompat.Light">
+    
+        
 		<activity android:name="com.itude.mobile.mobbl.core.MBSplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
            <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

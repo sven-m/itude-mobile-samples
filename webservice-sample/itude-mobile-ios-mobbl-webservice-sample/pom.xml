@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itude.mobile.ios.mobbl</groupId>
-	<artifactId>mobbl-master-detail-sample</artifactId>
+	<artifactId>mobbl-webservice-sample</artifactId>
 	<version>0.0.1.0-SNAPSHOT</version>
 	<packaging>xcode-app</packaging>
 	<name>iOS  Mobbl Master-Detail Sample</name>
@@ -52,7 +52,7 @@
 		            <sdk>iphonesimulator</sdk>
 		            <sdk>iphoneos</sdk>
     		    </sdks>
-    		    <target>mobbl-master-detail-sample</target>
+    		    <target>mobbl-webservice-detail-sample</target>
     	    	<skipVersionUpdate>true</skipVersionUpdate>
 			</configuration>
 	      </plugin>
@@ -60,7 +60,7 @@
 	  </build>
 	  
 	  <properties>
-        <core.framework.version>0.0.2.5-SNAPSHOT</core.framework.version>
+        <core.framework.version>0.0.2.5</core.framework.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>  
 	  

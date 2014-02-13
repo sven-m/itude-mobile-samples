@@ -3,11 +3,10 @@
         <Wiring>
             
 			<!-- origin="Controller" tells the framework on which screen to start -->
-            <Outcome origin="Controller" name="init" action="PAGE-catalog" dialog="DIALOG-home" noBackgroundProcessing="FALSE"/>
+            <Outcome origin="Controller" name="init" action="PAGE-catalog" dialog="DIALOG-home" noBackgroundProcessing="FALSE" />
             
-
             <!-- navigation from list to detail screen transferDocument ensures the same Document is used in both screens. If it is not specified the detail screens CATALOG document is separate from the list screen's copy of the CATALOG document. noBackgroundProcessing specifies not to construct PAGE-plant-detail in the background ( default behaviour ) -->
-            <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="FALSE" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" noBackgroundProcessing="FALSE"/>
 
         </Wiring>
     </Controller>
