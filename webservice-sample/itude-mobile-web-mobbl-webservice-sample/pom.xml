@@ -14,10 +14,17 @@
 	</organization>
 	<developers>
 		<developer>
+			<name>Pjotter Tommassen</name>
+			<id>p.tommassen</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
 			<name>Wiebe Elsinga</name>
 			<id>w.elsinga</id>
 			<roles>
-				<role>Developer</role>
 				<role>Contributor</role>
 			</roles>
 		</developer>
@@ -47,12 +54,12 @@
 		<system>GitHub Issues</system>
 	</issueManagement>
 
+
 	<scm>
 		<url>https://github.com/ItudeMobile/itude-mobile-samples</url>
-		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git</connection>
-		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git</developerConnection>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git/webservice-sample/itude-mobile-web-mobbl-webservice-sample</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git/webservice-sample/itude-mobile-web-mobbl-webservice-sample</developerConnection>
 	</scm>
-
 	<build>
 	    
 	    <pluginManagement>
@@ -173,7 +180,7 @@
 	<properties>
 		<!-- In order to make #{env.projectVersion} work -->
 		<version>${project.version}</version>
-		<core.lib.version>0.1.1.2-SNAPSHOT</core.lib.version>
+		<core.lib.version>0.1.1.3</core.lib.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	

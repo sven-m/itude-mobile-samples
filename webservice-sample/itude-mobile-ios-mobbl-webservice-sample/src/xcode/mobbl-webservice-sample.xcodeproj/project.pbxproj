@@ -28,7 +28,6 @@
 		00CD671418A838C700882E34 /* MBPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CD66DE18A838C700882E34 /* MBPicker.xib */; };
 		00CD671518A838C700882E34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00CD66E018A838C700882E34 /* InfoPlist.strings */; };
 		00CD671618A838C700882E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CD66E218A838C700882E34 /* main.m */; };
-		00CD671718A838C700882E34 /* mobbl-webservice-sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00CD66E318A838C700882E34 /* mobbl-webservice-sample-Info.plist */; };
 		00CD673C18A841BC00882E34 /* PAGE-catalog.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00CD673118A841BC00882E34 /* PAGE-catalog.xml */; };
 		00CD674518A841BC00882E34 /* PAGE-plant-detail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00CD673A18A841BC00882E34 /* PAGE-plant-detail.xml */; };
 		00CD674918A8430700882E34 /* PAGE-exception.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00CD674818A8430700882E34 /* PAGE-exception.xml */; };
@@ -61,10 +60,10 @@
 		C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */; };
 		C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */; };
 		C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D44530188D1F4B00052D2C /* MBPicker.nib */; };
+		C7FB469918AD2C3900E6A3D4 /* dialogs_mobbl.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7FB469818AD2C3900E6A3D4 /* dialogs_mobbl.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00CD665C18A7CB8600882E34 /* dialogs_mobbl.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = dialogs_mobbl.xml; path = "../../../itude-mobile-ios-mobbl-framework/src/xcode/mobbl-core-framework/Resources/Config/dialogs_mobbl.xml"; sourceTree = "<group>"; };
 		00CD669818A838C700882E34 /* WebserviceApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceApplicationController.h; sourceTree = "<group>"; };
 		00CD669918A838C700882E34 /* WebserviceApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebserviceApplicationController.m; sourceTree = "<group>"; };
 		00CD66B318A838C700882E34 /* actions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = actions.xml; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_font_up@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_up@2x.png"; sourceTree = "<group>"; };
 		C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBDatePicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBDatePicker.nib"; sourceTree = "<group>"; };
 		C7D44530188D1F4B00052D2C /* MBPicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBPicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBPicker.nib"; sourceTree = "<group>"; };
+		C7FB469818AD2C3900E6A3D4 /* dialogs_mobbl.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = dialogs_mobbl.xml; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/dialogs_mobbl.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +325,7 @@
 		C7D44562188D223200052D2C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				00CD665C18A7CB8600882E34 /* dialogs_mobbl.xml */,
+				C7FB469818AD2C3900E6A3D4 /* dialogs_mobbl.xml */,
 				C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */,
 				C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */,
 				C7D44523188D1F4B00052D2C /* backButtonCheveron.png */,
@@ -413,13 +413,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FB469918AD2C3900E6A3D4 /* dialogs_mobbl.xml in Resources */,
 				00CD66F318A838C700882E34 /* dialogs.xml in Resources */,
 				00CD66FF18A838C700882E34 /* iTunesArtwork.png in Resources */,
 				00CD674918A8430700882E34 /* PAGE-exception.xml in Resources */,
 				00CD670218A838C700882E34 /* LaunchImage.png in Resources */,
 				C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */,
 				00CD673C18A841BC00882E34 /* PAGE-catalog.xml in Resources */,
-				00CD671718A838C700882E34 /* mobbl-webservice-sample-Info.plist in Resources */,
 				C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */,
 				C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */,
 				00CD674D18A847C300882E34 /* endpoints.xml in Resources */,
