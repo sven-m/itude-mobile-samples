@@ -25,3 +25,6 @@ layout-sample (Coming soon)
 
 testbed (Coming soon)
 - For testing new features of the framework. You will find most features of the framework in it, but it can be a bit confusing. Testbed also contains features that are platform specific, such as transition styles on iOS and Action Bar on Android. These features are not meant to be compatible with other features and only exist to make life easier for developers of that platform.
+
+## License
+The code in this project is licensed under the Apache Software License 2.0, per the terms of the included LICENSE file.

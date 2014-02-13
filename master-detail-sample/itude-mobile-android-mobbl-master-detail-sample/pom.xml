@@ -8,16 +8,12 @@
 	<name>Android Mobbl Master Detail Sample</name>
 	<description>Android Mobbl Master Detail Sample application</description>
 	<url>http://mobbl.org/</url>
-	<inceptionYear>2013</inceptionYear>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>Itude Mobile B.V</name>
+		<url>http://www.itude.com/</url>
+	</organization>
 	<developers>
-		<developer>
-			<name>Wiebe Elsinga</name>
-			<id>w.elsinga</id>
-			<roles>
-				<role>Developer</role>
-				<role>Contributor</role>
-			</roles>
-		</developer>
 		<developer>
 			<name>Pjotter Tommassen</name>
 			<id>p.tommassen</id>
@@ -26,7 +22,14 @@
 				<role>Contributor</role>
 			</roles>
 		</developer>
-			</developers>
+		<developer>
+			<name>Wiebe Elsinga</name>
+			<id>w.elsinga</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<dependencies>
 		<dependency>
@@ -82,8 +85,8 @@
 
 	<scm>
 		<url>https://github.com/ItudeMobile/itude-mobile-samples</url>
-		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git</connection>
-		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git</developerConnection>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git/master-detail-sample/itude-mobile-android-mobbl-master-detail-sample</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git/master-detail-sample/itude-mobile-android-mobbl-master-detail-sample</developerConnection>
 	</scm>
 
 	<build>

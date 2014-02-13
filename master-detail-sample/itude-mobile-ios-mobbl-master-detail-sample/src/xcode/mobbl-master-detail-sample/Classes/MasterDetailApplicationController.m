@@ -15,7 +15,6 @@
  */
 
 #import "MasterDetailApplicationController.h"
-#import "MBApplicationFactory.h"
 
 @implementation MasterDetailApplicationController
 
