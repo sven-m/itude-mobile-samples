@@ -26,5 +26,11 @@ layout-sample (Coming soon)
 testbed (Coming soon)
 - For testing new features of the framework. You will find most features of the framework in it, but it can be a bit confusing. Testbed also contains features that are platform specific, such as transition styles on iOS and Action Bar on Android. These features are not meant to be compatible with other features and only exist to make life easier for developers of that platform.
 
+## Contribute
+
+If you find a bug or have a new feature you want to add, just create a pull request and submit it to us. You can also [file an issue](https://github.com/ItudeMobile/itude-mobile-samples/issues/new).
+
+Please note, if you have a pull request, make sure to use the [develop branch](https://github.com/ItudeMobile/itude-mobile-samples/tree/develop) as your base.
+
 ## License
 The code in this project is licensed under the Apache Software License 2.0, per the terms of the included LICENSE file.
