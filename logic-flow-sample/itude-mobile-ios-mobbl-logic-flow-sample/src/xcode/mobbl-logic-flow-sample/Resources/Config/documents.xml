@@ -1,0 +1,44 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<Model>
+        <Documents>
+            <!-- the MBMemoryDataHandler gets a copy of the Document from the file system (CATALOG.xml) and then keeps
+             it in memory until the app is stopped. -->
+            <Document name="CATALOG" dataManager="PlantDataHandler">
+                <Element name="PLANT">
+                    <Element name="COMMON">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="BOTANICAL">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="ZONE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="LIGHT">
+                        <Attribute name="text()" type="Plant-Light"/>
+                    </Element>
+                    <Element name="PRICE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="AVAILABILITY">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                </Element>
+            </Document>
+
+            <Document name="LoginForm" autoCreate="TRUE" dataManager="MBMemoryDataHandler">
+                <Element name="Credentials" minOccurs="1">
+                    <Attribute name="user" type="string" defaultValue="demo"/>
+                    <Attribute name="password" type="string" defaultValue="demo"/>
+                </Element>
+            </Document>
+
+            <Document name="SessionState" autoCreate="TRUE" dataManager="MBMemoryDataHandler">
+                <Element name="Session" minOccurs="1">
+                    <Attribute name="loggedIn" type="string" defaultValue="FALSE"/>
+                </Element>
+            </Document>
+
+        </Documents>
+    </Model>
+</Configuration>

@@ -1,0 +1,21 @@
+<MBBundle>
+    <!-- Generic translations -->
+    <Text key="closeButtonTitle" value="Sluiten"/>
+    <Text key="OK" value="OK"/>
+    <Text key="Select" value="Selecteer"/>
+    <Text key="No" value="Nee"/>
+    <Text key="Yes" value="Ja"/>
+    <Text key="Edit" value="Wijzigen"/>
+    <Text key="Save" value="Opslaan"/>
+    <Text key="Remember" value="Bewaren"/>
+    <Text key="Cancel" value="Annuleren"/>
+    <Text key="Done" value="Selecteren"/>
+    <Text key="Not selected" value="Niet geselecteerd"/>
+    <Text key="Unknown" value="Onbekend"/>
+    <Text key="The server returned an unknown error. Code:" value="De server heeft een onverwacht response terug gegeven. Code"/>
+    <Text key="Message" value="Melding"/>
+    <Text key="true" value="Ja"/>
+    <Text key="false" value="Nee"/>
+    <Text key="Information" value="Informatie"/>
+    
+</MBBundle>
