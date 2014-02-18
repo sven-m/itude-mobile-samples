@@ -1,9 +1,10 @@
-Sample project to illustrate webservice integration in Mobbl:
-- Writing a service that fits a webservice
-- Getting data
-- Caching it
+Sample project to illustrate logic flow in Mobbl:
+- Writing Actions to login, logout
+- Handling login errors
+- Writing Outcomes with conditional origins
+- Overriding cached data from a webservice
 
-The differences between the master-detail-sample and this project are solely to do with webservice integration.
+This project extends the webservice sample project.
 
 
 ## Overview
