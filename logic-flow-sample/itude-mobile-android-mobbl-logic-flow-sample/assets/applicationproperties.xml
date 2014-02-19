@@ -1,0 +1,7 @@
+<Application>
+	<Property name="localeCode" value="nl_NL"/>
+
+		<!-- ANDROID LOG LEVELS -->
+	<Property name="logLevel" value="3"/>
+
+</Application>

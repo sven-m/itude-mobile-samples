@@ -1,0 +1,19 @@
+<Configuration>
+    <View>
+        <Page name="PAGE-LoggedIn" document="CATALOG" title="Logged In">
+            <Panel type="LIST">
+                <Panel type="ROW" outcome="OUTCOME-GetFreshPlants">
+                    <Field type="LABEL" label="Show Fresh Plants" />
+                    <Field type="SUBLABEL" label="Needs the network" />
+                </Panel>
+                <Panel type="ROW" outcome="OUTCOME-Catalog">
+                    <Field type="LABEL" label="Show Stale Plants" />
+                    <Field type="SUBLABEL" label="Cached data (60s)" />
+                </Panel>
+                <Panel type="ROW" >
+                    <Field type="BUTTON" label="Log off" outcome="OUTCOME-LogOff"/>
+                </Panel>
+            </Panel>
+        </Page>
+    </View>
+</Configuration>

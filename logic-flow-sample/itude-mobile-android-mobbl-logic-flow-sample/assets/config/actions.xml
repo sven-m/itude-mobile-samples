@@ -1,0 +1,9 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<Controller>
+        <Actions>
+			<Action name="ACTION-GetFreshPlants" className="GetFreshPlants"/>
+            <Action name="ACTION-CheckCredentials" className="CheckCredentials"/>
+            <Action name="ACTION-LogOff" className="LogOff"/>
+		</Actions>
+	</Controller>
+</Configuration>
