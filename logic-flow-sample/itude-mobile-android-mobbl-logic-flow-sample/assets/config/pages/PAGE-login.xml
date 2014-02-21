@@ -1,0 +1,19 @@
+<Configuration>
+    <View>
+        <Page name="PAGE-Login" document="LoginForm" title="Login">
+            <Panel type="LIST">
+                <Panel type="ROW" >
+                    <!--Field type="LABEL" label="Username"/-->
+                    <Field type="INPUTFIELD" name="user" label="User" path="/Credentials[0]/@user"/>
+                </Panel>
+                <Panel type="ROW">
+                    <Field type="LABEL" label="Password"/>
+                    <Field type="PASSWORDFIELD" path="Credentials[0]/@password"/>
+                </Panel>
+                <Panel type="ROW" >
+                    <Field type="BUTTON" label="OK" outcome="OUTCOME-CheckCredentials" />
+                </Panel>
+            </Panel>
+        </Page>
+    </View>
+</Configuration>

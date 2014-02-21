@@ -1,0 +1,9 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<View>	
+        <Include name="config/pages/PAGE-plant-detail.xml"/>
+        <Include name="config/pages/PAGE-catalog.xml"/>
+        <Include name="config/pages/PAGE-loggedin.xml"/>
+        <Include name="config/pages/PAGE-login.xml"/>
+        <Include name="config/pages/PAGE-loginerror.xml"/>
+    </View>
+</Configuration>
