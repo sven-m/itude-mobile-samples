@@ -72,7 +72,7 @@
 		            <sdk>iphonesimulator</sdk>
 		            <sdk>iphoneos</sdk>
     		    </sdks>
-    		    <target>mobbl-logic-flow-detail-sample</target>
+    		    <target>mobbl-logic-flow-sample</target>
     	    	<skipVersionUpdate>true</skipVersionUpdate>
 			</configuration>
 	      </plugin>
