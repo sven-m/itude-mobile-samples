@@ -7,7 +7,7 @@ master-detail-sample
 webservice-sample 
 - extends the master-detail-sample with webservice integration and caching.
 
-logic-flow-example (Coming soon)
+logic-flow-example
 - Example of adding business logic in actions, separate from the view or data
 - How to override the document cache programmatically
 - How to handling an error from a webservice
