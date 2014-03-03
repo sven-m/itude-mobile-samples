@@ -28,10 +28,10 @@
 }
 
 /** uncomment to parse a JSON response instead of the default XML
-
+*/
  -(MBDocument *)documentWithData:(NSData *)data andDocumentName:(NSString *)documentName{
  return [[MBDocumentFactory sharedInstance] documentWithData:data withType:PARSER_JSON andDefinition:[[MBMetadataService sharedInstance] definitionForDocumentName:documentName]];
  
  }
- */
+ 
 @end
