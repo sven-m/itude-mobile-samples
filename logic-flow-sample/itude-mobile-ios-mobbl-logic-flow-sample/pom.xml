@@ -80,7 +80,7 @@
 	  </build>
 	  
 	  <properties>
-        <core.framework.version>0.0.2.7</core.framework.version>
+        <core.framework.version>0.0.2.8</core.framework.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>  
 	  
