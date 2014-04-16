@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.0.1" package="com.itude.mobile.mobbl.samples.webservice">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="11"/>
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="11"/>
 	<uses-permission android:name="android.permission.INTERNET" />
 	
-    <application android:debuggable="true" android:name="com.itude.mobile.mobbl.samples.masterdetail.WebserviceApplicationCore" android:theme="@style/Theme.AppCompat.Light">
+    <application android:debuggable="true" android:label="MobblWebServiceSample" android:name="com.itude.mobile.mobbl.samples.masterdetail.WebserviceApplicationCore" android:theme="@style/Theme.AppCompat.Light">
     
         
 		<activity android:name="com.itude.mobile.mobbl.core.MBSplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
