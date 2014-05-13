@@ -30,7 +30,7 @@
         [[MBResourceService sharedInstance] setFileManager:[[[CustomFileManager alloc] init] autorelease]];
         
         [[MBMetadataService sharedInstance] setConfigName:@"master_config.xml"];
-        [[MBMetadataService sharedInstance] setEndpointsName:@"bp-resources/config/endpoints.xml"];
+        [[MBMetadataService sharedInstance] setEndpointsName:@"shared-resources/config/endpoints.xml"];
 
         // registers a factory that creates custom ViewControllers and Custom Actions
         CustomApplicationFactory *customApplicationFactory = [[CustomApplicationFactory alloc] init];

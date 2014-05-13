@@ -11,36 +11,23 @@
 		03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B513C6FFFB00E9BD32 /* UIKit.framework */; };
 		03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B713C6FFFB00E9BD32 /* Foundation.framework */; };
 		03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */; };
-		26F257E0191CDA9600046A8E /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257DF191CDA9600046A8E /* resources.xml */; };
-		26F257E2191CF4AC00046A8E /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257E1191CF4AC00046A8E /* applicationproperties.xml */; };
-		26F257E5191D08B700046A8E /* CustomApplicationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257E4191D08B700046A8E /* CustomApplicationFactory.m */; };
-		26F257EB1920F7FB00046A8E /* master_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EA1920F7FB00046A8E /* master_config.xml */; };
-		26F257ED1920F84100046A8E /* local_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EC1920F84100046A8E /* local_config.xml */; };
-		26F257F01921083600046A8E /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257EF1921083600046A8E /* CustomFileManager.m */; };
 		26F257F21922186B00046A8E /* shared-resources in Resources */ = {isa = PBXBuildFile; fileRef = 26F257F11922186B00046A8E /* shared-resources */; };
+		26F258111922233B00046A8E /* FireInitialOutcomes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257FC1922233B00046A8E /* FireInitialOutcomes.m */; };
+		26F258121922233B00046A8E /* CustomApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257FE1922233B00046A8E /* CustomApplicationController.m */; };
+		26F258131922233B00046A8E /* CustomApplicationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F258001922233B00046A8E /* CustomApplicationFactory.m */; };
+		26F258141922233B00046A8E /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F258021922233B00046A8E /* CustomFileManager.m */; };
+		26F258151922233B00046A8E /* local_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258051922233B00046A8E /* local_config.xml */; };
+		26F258161922233B00046A8E /* master_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258061922233B00046A8E /* master_config.xml */; };
+		26F258171922233B00046A8E /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258081922233B00046A8E /* applicationproperties.xml */; };
+		26F258181922233B00046A8E /* InitialOutcomes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258091922233B00046A8E /* InitialOutcomes.xml */; };
+		26F258191922233B00046A8E /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580A1922233B00046A8E /* resources.xml */; };
+		26F2581A1922233B00046A8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580C1922233B00046A8E /* InfoPlist.strings */; };
+		26F2581B1922233B00046A8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2580E1922233B00046A8E /* main.m */; };
+		26F2581C1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */; };
 		C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC206183379E000A189F1 /* libsqlite3.0.dylib */; };
 		C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC208183379F300A189F1 /* AVFoundation.framework */; };
 		C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC20A18337A1000A189F1 /* QuartzCore.framework */; };
-		C74DAAA8183269D400580179 /* CustomApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DAA56183269D300580179 /* CustomApplicationController.m */; };
-		C74DAAD5183269D400580179 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C74DAAA0183269D400580179 /* InfoPlist.strings */; };
-		C74DAAD6183269D400580179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DAAA2183269D400580179 /* main.m */; };
-		C74DAAD7183269D400580179 /* mobbl-sample-shared-resources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C74DAAA3183269D400580179 /* mobbl-sample-shared-resources-Info.plist */; };
 		C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */; };
-		C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */; };
-		C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */; };
-		C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44523188D1F4B00052D2C /* backButtonCheveron.png */; };
-		C7D44534188D1F4B00052D2C /* backButtonCheveron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */; };
-		C7D44535188D1F4B00052D2C /* backButtonDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44525188D1F4B00052D2C /* backButtonDefault.png */; };
-		C7D44536188D1F4B00052D2C /* backButtonDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */; };
-		C7D44537188D1F4B00052D2C /* backButtonIconArrowWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */; };
-		C7D44538188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */; };
-		C7D44539188D1F4B00052D2C /* database.db in Resources */ = {isa = PBXBuildFile; fileRef = C7D44529188D1F4B00052D2C /* database.db */; };
-		C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452B188D1F4B00052D2C /* icon_font_down.png */; };
-		C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */; };
-		C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452D188D1F4B00052D2C /* icon_font_up.png */; };
-		C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */; };
-		C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */; };
-		C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D44530188D1F4B00052D2C /* MBPicker.nib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,40 +36,28 @@
 		03F239B513C6FFFB00E9BD32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03F239B713C6FFFB00E9BD32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		26F257DF191CDA9600046A8E /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
-		26F257E1191CF4AC00046A8E /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
-		26F257E3191D08B700046A8E /* CustomApplicationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationFactory.h; sourceTree = "<group>"; };
-		26F257E4191D08B700046A8E /* CustomApplicationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationFactory.m; sourceTree = "<group>"; };
-		26F257EA1920F7FB00046A8E /* master_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = master_config.xml; path = Config/master_config.xml; sourceTree = "<group>"; };
-		26F257EC1920F84100046A8E /* local_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = local_config.xml; path = Config/local_config.xml; sourceTree = "<group>"; };
-		26F257EE1921083600046A8E /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
-		26F257EF1921083600046A8E /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
 		26F257F11922186B00046A8E /* shared-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "shared-resources"; path = "../../target/generated-resources/shared-resources"; sourceTree = "<group>"; };
+		26F257FB1922233B00046A8E /* FireInitialOutcomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireInitialOutcomes.h; sourceTree = "<group>"; };
+		26F257FC1922233B00046A8E /* FireInitialOutcomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireInitialOutcomes.m; sourceTree = "<group>"; };
+		26F257FD1922233B00046A8E /* CustomApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationController.h; sourceTree = "<group>"; };
+		26F257FE1922233B00046A8E /* CustomApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationController.m; sourceTree = "<group>"; };
+		26F257FF1922233B00046A8E /* CustomApplicationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationFactory.h; sourceTree = "<group>"; };
+		26F258001922233B00046A8E /* CustomApplicationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationFactory.m; sourceTree = "<group>"; };
+		26F258011922233B00046A8E /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
+		26F258021922233B00046A8E /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
+		26F258051922233B00046A8E /* local_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = local_config.xml; sourceTree = "<group>"; };
+		26F258061922233B00046A8E /* master_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = master_config.xml; sourceTree = "<group>"; };
+		26F258081922233B00046A8E /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
+		26F258091922233B00046A8E /* InitialOutcomes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = InitialOutcomes.xml; sourceTree = "<group>"; };
+		26F2580A1922233B00046A8E /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
+		26F2580D1922233B00046A8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26F2580E1922233B00046A8E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mobbl-sample-shared-resources-Info.plist"; sourceTree = "<group>"; };
+		26F258101922233B00046A8E /* mobbl-sample-shared-resources.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobbl-sample-shared-resources.pch"; sourceTree = "<group>"; };
 		C71AC206183379E000A189F1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		C71AC208183379F300A189F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C71AC20A18337A1000A189F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C74DAA55183269D300580179 /* CustomApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationController.h; sourceTree = "<group>"; };
-		C74DAA56183269D300580179 /* CustomApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationController.m; sourceTree = "<group>"; };
-		C74DAAA1183269D400580179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C74DAAA2183269D400580179 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C74DAAA3183269D400580179 /* mobbl-sample-shared-resources-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mobbl-sample-shared-resources-Info.plist"; sourceTree = "<group>"; };
-		C74DAAA4183269D400580179 /* mobbl-sample-shared-resources.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobbl-sample-shared-resources.pch"; sourceTree = "<group>"; };
 		C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "mobbl-core-framework.framework"; path = "../../target/xcode-deps/frameworks/Debug/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework"; sourceTree = "<group>"; };
-		C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrowInverted.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted.png"; sourceTree = "<group>"; };
-		C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonArrowInverted@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted@2x.png"; sourceTree = "<group>"; };
-		C7D44523188D1F4B00052D2C /* backButtonCheveron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonCheveron.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonCheveron.png"; sourceTree = "<group>"; };
-		C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonCheveron@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonCheveron@2x.png"; sourceTree = "<group>"; };
-		C7D44525188D1F4B00052D2C /* backButtonDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonDefault.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonDefault.png"; sourceTree = "<group>"; };
-		C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonDefault@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonDefault@2x.png"; sourceTree = "<group>"; };
-		C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonIconArrowWhite.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonIconArrowWhite.png"; sourceTree = "<group>"; };
-		C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonIconArrowWhite@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonIconArrowWhite@2x.png"; sourceTree = "<group>"; };
-		C7D44529188D1F4B00052D2C /* database.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = database.db; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/database.db"; sourceTree = "<group>"; };
-		C7D4452B188D1F4B00052D2C /* icon_font_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_font_down.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_down.png"; sourceTree = "<group>"; };
-		C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_font_down@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_down@2x.png"; sourceTree = "<group>"; };
-		C7D4452D188D1F4B00052D2C /* icon_font_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_font_up.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_up.png"; sourceTree = "<group>"; };
-		C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_font_up@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_up@2x.png"; sourceTree = "<group>"; };
-		C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBDatePicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBDatePicker.nib"; sourceTree = "<group>"; };
-		C7D44530188D1F4B00052D2C /* MBPicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBPicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBPicker.nib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				26F257F11922186B00046A8E /* shared-resources */,
-				C74DAA4B183269D300580179 /* mobbl-blueprint-app */,
+				C74DAA4B183269D300580179 /* mobbl-sample-shared-resources */,
 				03F239B413C6FFFB00E9BD32 /* Frameworks */,
 				03F239B213C6FFFB00E9BD32 /* Products */,
-				C7D44562188D223200052D2C /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,87 +112,80 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		26F257E91920F7E700046A8E /* Config */ = {
+		26F257F91922233B00046A8E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				26F257EA1920F7FB00046A8E /* master_config.xml */,
-				26F257EC1920F84100046A8E /* local_config.xml */,
+				26F257FA1922233B00046A8E /* Actions */,
+				26F257FD1922233B00046A8E /* CustomApplicationController.h */,
+				26F257FE1922233B00046A8E /* CustomApplicationController.m */,
+				26F257FF1922233B00046A8E /* CustomApplicationFactory.h */,
+				26F258001922233B00046A8E /* CustomApplicationFactory.m */,
+				26F258011922233B00046A8E /* CustomFileManager.h */,
+				26F258021922233B00046A8E /* CustomFileManager.m */,
 			);
-			name = Config;
+			name = Classes;
+			path = "mobbl-sample-shared-resources/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		26F257FA1922233B00046A8E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				26F257FB1922233B00046A8E /* FireInitialOutcomes.h */,
+				26F257FC1922233B00046A8E /* FireInitialOutcomes.m */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
-		C74DAA4B183269D300580179 /* mobbl-blueprint-app */ = {
+		26F258031922233B00046A8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C74DAA4C183269D300580179 /* Classes */,
-				C74DAA74183269D300580179 /* Resources */,
-				C74DAA9F183269D400580179 /* Supporting Files */,
+				26F258041922233B00046A8E /* Config */,
+				26F258071922233B00046A8E /* Documents */,
 			);
-			path = "mobbl-blueprint-app";
+			name = Resources;
+			path = "mobbl-sample-shared-resources/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		26F258041922233B00046A8E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				26F258051922233B00046A8E /* local_config.xml */,
+				26F258061922233B00046A8E /* master_config.xml */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
-		C74DAA4C183269D300580179 /* Classes */ = {
+		26F258071922233B00046A8E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				26F257E3191D08B700046A8E /* CustomApplicationFactory.h */,
-				26F257E4191D08B700046A8E /* CustomApplicationFactory.m */,
-				C74DAA55183269D300580179 /* CustomApplicationController.h */,
-				C74DAA56183269D300580179 /* CustomApplicationController.m */,
-				26F257EE1921083600046A8E /* CustomFileManager.h */,
-				26F257EF1921083600046A8E /* CustomFileManager.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C74DAA74183269D300580179 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				26F257E91920F7E700046A8E /* Config */,
-				C74DAA7D183269D400580179 /* Documents */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		C74DAA7D183269D400580179 /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				26F257E1191CF4AC00046A8E /* applicationproperties.xml */,
-				26F257DF191CDA9600046A8E /* resources.xml */,
+				26F258081922233B00046A8E /* applicationproperties.xml */,
+				26F258091922233B00046A8E /* InitialOutcomes.xml */,
+				26F2580A1922233B00046A8E /* resources.xml */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
 		};
-		C74DAA9F183269D400580179 /* Supporting Files */ = {
+		26F2580B1922233B00046A8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C74DAAA0183269D400580179 /* InfoPlist.strings */,
-				C74DAAA2183269D400580179 /* main.m */,
-				C74DAAA3183269D400580179 /* mobbl-sample-shared-resources-Info.plist */,
-				C74DAAA4183269D400580179 /* mobbl-sample-shared-resources.pch */,
+				26F2580C1922233B00046A8E /* InfoPlist.strings */,
+				26F2580E1922233B00046A8E /* main.m */,
+				26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */,
+				26F258101922233B00046A8E /* mobbl-sample-shared-resources.pch */,
 			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
+			name = "Supporting Files";
+			path = "mobbl-sample-shared-resources/Supporting Files";
+			sourceTree = SOURCE_ROOT;
 		};
-		C7D44562188D223200052D2C /* Resources */ = {
+		C74DAA4B183269D300580179 /* mobbl-sample-shared-resources */ = {
 			isa = PBXGroup;
 			children = (
-				C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */,
-				C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */,
-				C7D44523188D1F4B00052D2C /* backButtonCheveron.png */,
-				C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */,
-				C7D44525188D1F4B00052D2C /* backButtonDefault.png */,
-				C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */,
-				C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */,
-				C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */,
-				C7D44529188D1F4B00052D2C /* database.db */,
-				C7D4452B188D1F4B00052D2C /* icon_font_down.png */,
-				C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */,
-				C7D4452D188D1F4B00052D2C /* icon_font_up.png */,
-				C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */,
-				C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */,
-				C7D44530188D1F4B00052D2C /* MBPicker.nib */,
+				26F257F91922233B00046A8E /* Classes */,
+				26F258031922233B00046A8E /* Resources */,
+				26F2580B1922233B00046A8E /* Supporting Files */,
 			);
-			name = Resources;
+			name = "mobbl-sample-shared-resources";
+			path = "mobbl-blueprint-app";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,28 +256,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */,
-				C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */,
-				26F257EB1920F7FB00046A8E /* master_config.xml in Resources */,
-				C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */,
-				26F257E2191CF4AC00046A8E /* applicationproperties.xml in Resources */,
-				C7D44534188D1F4B00052D2C /* backButtonCheveron@2x.png in Resources */,
-				C7D44535188D1F4B00052D2C /* backButtonDefault.png in Resources */,
-				C7D44536188D1F4B00052D2C /* backButtonDefault@2x.png in Resources */,
-				C7D44537188D1F4B00052D2C /* backButtonIconArrowWhite.png in Resources */,
-				C7D44538188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png in Resources */,
-				C7D44539188D1F4B00052D2C /* database.db in Resources */,
+				26F258181922233B00046A8E /* InitialOutcomes.xml in Resources */,
+				26F2581A1922233B00046A8E /* InfoPlist.strings in Resources */,
+				26F2581C1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist in Resources */,
 				26F257F21922186B00046A8E /* shared-resources in Resources */,
-				C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */,
-				C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */,
-				C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */,
-				C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */,
-				C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */,
-				C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */,
-				26F257E0191CDA9600046A8E /* resources.xml in Resources */,
-				C74DAAD7183269D400580179 /* mobbl-sample-shared-resources-Info.plist in Resources */,
-				26F257ED1920F84100046A8E /* local_config.xml in Resources */,
-				C74DAAD5183269D400580179 /* InfoPlist.strings in Resources */,
+				26F258171922233B00046A8E /* applicationproperties.xml in Resources */,
+				26F258151922233B00046A8E /* local_config.xml in Resources */,
+				26F258161922233B00046A8E /* master_config.xml in Resources */,
+				26F258191922233B00046A8E /* resources.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,20 +274,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F257F01921083600046A8E /* CustomFileManager.m in Sources */,
-				C74DAAA8183269D400580179 /* CustomApplicationController.m in Sources */,
-				26F257E5191D08B700046A8E /* CustomApplicationFactory.m in Sources */,
-				C74DAAD6183269D400580179 /* main.m in Sources */,
+				26F2581B1922233B00046A8E /* main.m in Sources */,
+				26F258141922233B00046A8E /* CustomFileManager.m in Sources */,
+				26F258111922233B00046A8E /* FireInitialOutcomes.m in Sources */,
+				26F258131922233B00046A8E /* CustomApplicationFactory.m in Sources */,
+				26F258121922233B00046A8E /* CustomApplicationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C74DAAA0183269D400580179 /* InfoPlist.strings */ = {
+		26F2580C1922233B00046A8E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C74DAAA1183269D400580179 /* en */,
+				26F2580D1922233B00046A8E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

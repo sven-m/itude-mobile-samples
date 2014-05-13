@@ -1,6 +1,0 @@
-<Resources>
-    <Resource id="config" url="file://master_config.xml"/>
-    <Resource id="endpoints" url="file://bp-resources/config/endpoints.xml"/>
-    
-    <Bundle languageCode="nl" url="file://bp-resources/texts-nl.xml"/>
-</Resources> 
