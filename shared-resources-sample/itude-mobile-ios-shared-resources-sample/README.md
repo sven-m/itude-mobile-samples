@@ -1,6 +1,15 @@
-# iOS MOBBL Blueprint
+# iOS MOBBL Shared Resources Sample
 
-Template project with [Mobbl](https://github.com/ItudeMobile/itude-mobile-ios-mobbl-framework) integration.
+This is a sample project that demonstrates the use of iOS MOBBL with external resources through maven.
+
+## Usage
+
+First make sure you have installed the resources project into your maven repository. The resources project is located in `../itude-mobile-resources-shared-resource-sample`. When you have installed the resources project into your maven repository you should run:
+
+    $ cd itude-mobile-ios-shared-resources-sample
+    $ mvn clean install
+
+in order to build the Xcode project. The resources will be located in the new `target` folder. The Xcode project contains a folder reference to the resources folder inside `target`, the folder reference can only be considered valid following a successful execution of `mvn clean install`. Happy coding!
 
 ## Contribute
 
