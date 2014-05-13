@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F090DF13C7550500A58AE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */; };
+		03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B513C6FFFB00E9BD32 /* UIKit.framework */; };
+		03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B713C6FFFB00E9BD32 /* Foundation.framework */; };
+		03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */; };
+		2604B518191CCF2500770D3A /* bp-resources in Resources */ = {isa = PBXBuildFile; fileRef = 2604B517191CCF2500770D3A /* bp-resources */; };
+		26F257E0191CDA9600046A8E /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257DF191CDA9600046A8E /* resources.xml */; };
+		26F257E2191CF4AC00046A8E /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257E1191CF4AC00046A8E /* applicationproperties.xml */; };
+		26F257E5191D08B700046A8E /* CustomApplicationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257E4191D08B700046A8E /* CustomApplicationFactory.m */; };
+		26F257EB1920F7FB00046A8E /* master_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EA1920F7FB00046A8E /* master_config.xml */; };
+		26F257ED1920F84100046A8E /* local_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EC1920F84100046A8E /* local_config.xml */; };
+		26F257F01921083600046A8E /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257EF1921083600046A8E /* CustomFileManager.m */; };
+		C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC206183379E000A189F1 /* libsqlite3.0.dylib */; };
+		C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC208183379F300A189F1 /* AVFoundation.framework */; };
+		C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC20A18337A1000A189F1 /* QuartzCore.framework */; };
+		C74DAAA8183269D400580179 /* CustomApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DAA56183269D300580179 /* CustomApplicationController.m */; };
+		C74DAAD5183269D400580179 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C74DAAA0183269D400580179 /* InfoPlist.strings */; };
+		C74DAAD6183269D400580179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DAAA2183269D400580179 /* main.m */; };
+		C74DAAD7183269D400580179 /* mobbl-blueprint-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C74DAAA3183269D400580179 /* mobbl-blueprint-app-Info.plist */; };
+		C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */; };
+		C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */; };
+		C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */; };
+		C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44523188D1F4B00052D2C /* backButtonCheveron.png */; };
+		C7D44534188D1F4B00052D2C /* backButtonCheveron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */; };
+		C7D44535188D1F4B00052D2C /* backButtonDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44525188D1F4B00052D2C /* backButtonDefault.png */; };
+		C7D44536188D1F4B00052D2C /* backButtonDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */; };
+		C7D44537188D1F4B00052D2C /* backButtonIconArrowWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */; };
+		C7D44538188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */; };
+		C7D44539188D1F4B00052D2C /* database.db in Resources */ = {isa = PBXBuildFile; fileRef = C7D44529188D1F4B00052D2C /* database.db */; };
+		C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452B188D1F4B00052D2C /* icon_font_down.png */; };
+		C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */; };
+		C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452D188D1F4B00052D2C /* icon_font_up.png */; };
+		C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */; };
+		C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */; };
+		C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */ = {isa = PBXBuildFile; fileRef = C7D44530188D1F4B00052D2C /* MBPicker.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		03F090F213C7550500A58AE7 /* mobbl-blueprint-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobbl-blueprint-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F239B513C6FFFB00E9BD32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03F239B713C6FFFB00E9BD32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2604B517191CCF2500770D3A /* bp-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "bp-resources"; path = "../../target/generated-resources/bp-resources"; sourceTree = "<group>"; };
+		26F257DF191CDA9600046A8E /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
+		26F257E1191CF4AC00046A8E /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
+		26F257E3191D08B700046A8E /* CustomApplicationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationFactory.h; sourceTree = "<group>"; };
+		26F257E4191D08B700046A8E /* CustomApplicationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationFactory.m; sourceTree = "<group>"; };
+		26F257EA1920F7FB00046A8E /* master_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = master_config.xml; path = Config/master_config.xml; sourceTree = "<group>"; };
+		26F257EC1920F84100046A8E /* local_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = local_config.xml; path = Config/local_config.xml; sourceTree = "<group>"; };
+		26F257EE1921083600046A8E /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
+		26F257EF1921083600046A8E /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
+		C71AC206183379E000A189F1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C71AC208183379F300A189F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C71AC20A18337A1000A189F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C74DAA55183269D300580179 /* CustomApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationController.h; sourceTree = "<group>"; };
+		C74DAA56183269D300580179 /* CustomApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationController.m; sourceTree = "<group>"; };
+		C74DAAA1183269D400580179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C74DAAA2183269D400580179 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C74DAAA3183269D400580179 /* mobbl-blueprint-app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mobbl-blueprint-app-Info.plist"; sourceTree = "<group>"; };
+		C74DAAA4183269D400580179 /* mobbl-blueprint-app.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobbl-blueprint-app.pch"; sourceTree = "<group>"; };
+		C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "mobbl-core-framework.framework"; path = "../../target/xcode-deps/frameworks/Debug/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework"; sourceTree = "<group>"; };
+		C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrowInverted.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted.png"; sourceTree = "<group>"; };
+		C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonArrowInverted@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted@2x.png"; sourceTree = "<group>"; };
+		C7D44523188D1F4B00052D2C /* backButtonCheveron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonCheveron.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonCheveron.png"; sourceTree = "<group>"; };
+		C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonCheveron@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonCheveron@2x.png"; sourceTree = "<group>"; };
+		C7D44525188D1F4B00052D2C /* backButtonDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonDefault.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonDefault.png"; sourceTree = "<group>"; };
+		C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonDefault@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonDefault@2x.png"; sourceTree = "<group>"; };
+		C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonIconArrowWhite.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonIconArrowWhite.png"; sourceTree = "<group>"; };
+		C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonIconArrowWhite@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonIconArrowWhite@2x.png"; sourceTree = "<group>"; };
+		C7D44529188D1F4B00052D2C /* database.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = database.db; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/database.db"; sourceTree = "<group>"; };
+		C7D4452B188D1F4B00052D2C /* icon_font_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_font_down.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_down.png"; sourceTree = "<group>"; };
+		C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_font_down@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_down@2x.png"; sourceTree = "<group>"; };
+		C7D4452D188D1F4B00052D2C /* icon_font_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_font_up.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_up.png"; sourceTree = "<group>"; };
+		C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_font_up@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/icon_font_up@2x.png"; sourceTree = "<group>"; };
+		C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBDatePicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBDatePicker.nib"; sourceTree = "<group>"; };
+		C7D44530188D1F4B00052D2C /* MBPicker.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MBPicker.nib; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/MBPicker.nib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F090DE13C7550500A58AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */,
+				C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */,
+				03F090DF13C7550500A58AE7 /* SystemConfiguration.framework in Frameworks */,
+				C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */,
+				03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */,
+				03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */,
+				C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */,
+				03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03F239A613C6FFFA00E9BD32 = {
+			isa = PBXGroup;
+			children = (
+				2604B517191CCF2500770D3A /* bp-resources */,
+				C74DAA4B183269D300580179 /* mobbl-blueprint-app */,
+				03F239B413C6FFFB00E9BD32 /* Frameworks */,
+				03F239B213C6FFFB00E9BD32 /* Products */,
+				C7D44562188D223200052D2C /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		03F239B213C6FFFB00E9BD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F090F213C7550500A58AE7 /* mobbl-blueprint-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F239B413C6FFFB00E9BD32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */,
+				C71AC20A18337A1000A189F1 /* QuartzCore.framework */,
+				C71AC208183379F300A189F1 /* AVFoundation.framework */,
+				C71AC206183379E000A189F1 /* libsqlite3.0.dylib */,
+				03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */,
+				03F239B513C6FFFB00E9BD32 /* UIKit.framework */,
+				03F239B713C6FFFB00E9BD32 /* Foundation.framework */,
+				03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26F257E91920F7E700046A8E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				26F257EA1920F7FB00046A8E /* master_config.xml */,
+				26F257EC1920F84100046A8E /* local_config.xml */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C74DAA4B183269D300580179 /* mobbl-blueprint-app */ = {
+			isa = PBXGroup;
+			children = (
+				C74DAA4C183269D300580179 /* Classes */,
+				C74DAA74183269D300580179 /* Resources */,
+				C74DAA9F183269D400580179 /* Supporting Files */,
+			);
+			path = "mobbl-blueprint-app";
+			sourceTree = "<group>";
+		};
+		C74DAA4C183269D300580179 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26F257E3191D08B700046A8E /* CustomApplicationFactory.h */,
+				26F257E4191D08B700046A8E /* CustomApplicationFactory.m */,
+				C74DAA55183269D300580179 /* CustomApplicationController.h */,
+				C74DAA56183269D300580179 /* CustomApplicationController.m */,
+				26F257EE1921083600046A8E /* CustomFileManager.h */,
+				26F257EF1921083600046A8E /* CustomFileManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C74DAA74183269D300580179 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26F257E91920F7E700046A8E /* Config */,
+				C74DAA7D183269D400580179 /* Documents */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C74DAA7D183269D400580179 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				26F257E1191CF4AC00046A8E /* applicationproperties.xml */,
+				26F257DF191CDA9600046A8E /* resources.xml */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		C74DAA9F183269D400580179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C74DAAA0183269D400580179 /* InfoPlist.strings */,
+				C74DAAA2183269D400580179 /* main.m */,
+				C74DAAA3183269D400580179 /* mobbl-blueprint-app-Info.plist */,
+				C74DAAA4183269D400580179 /* mobbl-blueprint-app.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7D44562188D223200052D2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */,
+				C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */,
+				C7D44523188D1F4B00052D2C /* backButtonCheveron.png */,
+				C7D44524188D1F4B00052D2C /* backButtonCheveron@2x.png */,
+				C7D44525188D1F4B00052D2C /* backButtonDefault.png */,
+				C7D44526188D1F4B00052D2C /* backButtonDefault@2x.png */,
+				C7D44527188D1F4B00052D2C /* backButtonIconArrowWhite.png */,
+				C7D44528188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png */,
+				C7D44529188D1F4B00052D2C /* database.db */,
+				C7D4452B188D1F4B00052D2C /* icon_font_down.png */,
+				C7D4452C188D1F4B00052D2C /* icon_font_down@2x.png */,
+				C7D4452D188D1F4B00052D2C /* icon_font_up.png */,
+				C7D4452E188D1F4B00052D2C /* icon_font_up@2x.png */,
+				C7D4452F188D1F4B00052D2C /* MBDatePicker.nib */,
+				C7D44530188D1F4B00052D2C /* MBPicker.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F090D913C7550500A58AE7 /* mobbl-blueprint-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F090EF13C7550500A58AE7 /* Build configuration list for PBXNativeTarget "mobbl-blueprint-app" */;
+			buildPhases = (
+				03F090DA13C7550500A58AE7 /* Sources */,
+				03F090DE13C7550500A58AE7 /* Frameworks */,
+				03F090E413C7550500A58AE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mobbl-blueprint-app";
+			productName = "itude-mobile-ios-pharmeon-pilservice";
+			productReference = 03F090F213C7550500A58AE7 /* mobbl-blueprint-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F239A813C6FFFA00E9BD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Itude Mobile B.V., The Netherlands";
+			};
+			buildConfigurationList = 03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-blueprint-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				da,
+				de,
+				es,
+				fi,
+				fr,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt,
+				ru,
+				sv,
+				zh_CN,
+				zh_TW,
+				English,
+			);
+			mainGroup = 03F239A613C6FFFA00E9BD32;
+			productRefGroup = 03F239B213C6FFFB00E9BD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F090D913C7550500A58AE7 /* mobbl-blueprint-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F090E413C7550500A58AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */,
+				C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */,
+				26F257EB1920F7FB00046A8E /* master_config.xml in Resources */,
+				C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */,
+				26F257E2191CF4AC00046A8E /* applicationproperties.xml in Resources */,
+				C7D44534188D1F4B00052D2C /* backButtonCheveron@2x.png in Resources */,
+				C7D44535188D1F4B00052D2C /* backButtonDefault.png in Resources */,
+				C7D44536188D1F4B00052D2C /* backButtonDefault@2x.png in Resources */,
+				C7D44537188D1F4B00052D2C /* backButtonIconArrowWhite.png in Resources */,
+				C7D44538188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png in Resources */,
+				C7D44539188D1F4B00052D2C /* database.db in Resources */,
+				C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */,
+				C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */,
+				C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */,
+				C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */,
+				C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */,
+				C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */,
+				26F257E0191CDA9600046A8E /* resources.xml in Resources */,
+				C74DAAD7183269D400580179 /* mobbl-blueprint-app-Info.plist in Resources */,
+				26F257ED1920F84100046A8E /* local_config.xml in Resources */,
+				2604B518191CCF2500770D3A /* bp-resources in Resources */,
+				C74DAAD5183269D400580179 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F090DA13C7550500A58AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F257F01921083600046A8E /* CustomFileManager.m in Sources */,
+				C74DAAA8183269D400580179 /* CustomApplicationController.m in Sources */,
+				26F257E5191D08B700046A8E /* CustomApplicationFactory.m in Sources */,
+				C74DAAD6183269D400580179 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C74DAAA0183269D400580179 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C74DAAA1183269D400580179 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F090F013C7550500A58AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-blueprint-app";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03F090F113C7550500A58AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-blueprint-app";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03F239E613C6FFFC00E9BD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=*]" = "-DDEBUG";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		03F239E713C6FFFC00E9BD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		BD1BDB791402902600303D2D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Distribution;
+		};
+		BD1BDB7D1402902600303D2D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/mobbl-blueprint-app/Supporting Files/mobbl-blueprint-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-blueprint-app";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F090EF13C7550500A58AE7 /* Build configuration list for PBXNativeTarget "mobbl-blueprint-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F090F013C7550500A58AE7 /* Debug */,
+				03F090F113C7550500A58AE7 /* Release */,
+				BD1BDB7D1402902600303D2D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-blueprint-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F239E613C6FFFC00E9BD32 /* Debug */,
+				03F239E713C6FFFC00E9BD32 /* Release */,
+				BD1BDB791402902600303D2D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F239A813C6FFFA00E9BD32 /* Project object */;
+}

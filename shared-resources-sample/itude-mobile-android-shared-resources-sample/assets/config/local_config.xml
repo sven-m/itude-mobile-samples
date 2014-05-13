@@ -1,0 +1,23 @@
+<Configuration xmlns="http://itude.com/schemas/MB/1.0">
+  <Model>
+    <Domains>
+    </Domains>
+
+  	<Documents>
+	</Documents>
+  </Model>
+
+  <Controller>
+	<Actions>
+	</Actions>
+	
+	<Wiring>
+	</Wiring>
+	
+  </Controller>
+
+  <View>
+      <Dialogs>
+	  </Dialogs>      
+  </View>  
+</Configuration>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itude.mobile.ios.mobbl</groupId>
+	<artifactId>mobbl-sample-app-shared-resources</artifactId>
+	<version>0.0.1.0-SNAPSHOT</version>
+	<packaging>xcode-app</packaging>
+	<name>iOS Mobbl Shared Resources Sample</name>
+	<description>iOS Mobbl Shared Resources Sample application</description>
+	<url>http://www.itude.com</url>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>Itude Mobile B.V</name>
+		<url>http://www.itude.com/</url>
+	</organization>
+	<licenses>
+		<license>
+        	<name>The Apache Software License, Version 2.0</name>
+            <url>LICENSE</url>
+        </license>
+    </licenses>
+    
+	<developers>
+		<developer>
+			<name>Ricardo de Wilde</name>
+			<id>r.dewilde</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Frank Frank van Eenbergen</name>
+			<id>f.vaneenbergen</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Pjotter Tommassen</name>
+			<id>p.tommassen</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Wiebe Elsinga</name>
+			<id>w.elsinga</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Sven Meyer</name>
+			<id>s.meyer</id>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+	</developers>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.itude.mobile.ios.mobbl</groupId>
+			<artifactId>mobbl-core-framework</artifactId>
+			<version>${core.framework.version}</version>
+			<type>xcode-framework</type>
+		</dependency>
+		<dependency>
+			<groupId>com.itude.mobile.resources.mobbl</groupId>
+			<artifactId>mobbl-sample-shared-resources</artifactId>
+			<version>${shared.resources.version}</version>
+			<classifier>resources</classifier>
+			<type>zip</type>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
+	<issueManagement>
+		<url>https://github.com/ItudeMobile/itude-mobile-samples/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<scm>
+		<url>https://github.com/ItudeMobile/itude-mobile-samples</url>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-samples.git/shared-resources-sample/itude-mobile-ios-shared-resources-sample</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-samples.git/shared-resources-sample/itude-mobile-ios-shared-resources-sample</developerConnection>
+	</scm>
+
+	<build>
+		<plugins>
+	      <plugin>
+	        <groupId>com.sap.prd.mobile.ios.mios</groupId>
+	        <artifactId>xcode-maven-plugin</artifactId>
+	        <version>1.13.0</version>
+	        <extensions>true</extensions>
+			<configuration>
+				<configuration>Release</configuration>
+				<sdks>
+		            <!--sdk>iphonesimulator</sdk-->
+		            <sdk>iphoneos</sdk>
+    		    </sdks>
+    		    <target>mobbl-sample-app-shared-resources</target>
+    	    	<skipVersionUpdate>true</skipVersionUpdate>
+			</configuration>
+	      </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack-shared-resources</id>
+						<goals>
+						<goal>unpack-dependencies</goal>
+						</goals>
+						<phase>initialize</phase>
+						<configuration>
+							<outputDirectory>${project.build.directory}/generated-resources/shared-resources</outputDirectory>
+							<includeArtifacIds>mobbl-sample-shared-resources</includeArtifacIds>
+							<includeGroupIds>com.itude.mobile.resources.mobbl</includeGroupIds>
+							<excludeTransitive>true</excludeTransitive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+	    </plugins>
+	  </build>
+	  
+	  <properties>
+        <shared.resources.version>0.0.0.1-SNAPSHOT</shared.resources.version>
+        <core.framework.version>0.0.2.12</core.framework.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>  
+	  
+	  <repositories>
+		<repository>
+			<id>itudemobile-github-repository</id>
+			<name>ItudeMobile Github repository</name>
+			<url>http://mobbl.org/maven-repository/releases</url>
+		</repository>
+	</repositories>
+	  
+</project>
+
+
+          

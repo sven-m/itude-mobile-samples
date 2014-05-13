@@ -1,0 +1,4 @@
+<Configuration xmlns="http://itude.com/schemas/MB/1.0">
+  <Include name="config/local_config.xml" />
+  <Include name="shared-resources/config/shared_config.xml" />
+</Configuration>
