@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F090DF13C7550500A58AE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */; };
+		03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B513C6FFFB00E9BD32 /* UIKit.framework */; };
+		03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B713C6FFFB00E9BD32 /* Foundation.framework */; };
+		03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */; };
+		26F257F21922186B00046A8E /* shared-resources in Resources */ = {isa = PBXBuildFile; fileRef = 26F257F11922186B00046A8E /* shared-resources */; };
+		26F258111922233B00046A8E /* FireInitialOutcomes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257FC1922233B00046A8E /* FireInitialOutcomes.m */; };
+		26F258121922233B00046A8E /* CustomApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257FE1922233B00046A8E /* CustomApplicationController.m */; };
+		26F258131922233B00046A8E /* CustomApplicationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F258001922233B00046A8E /* CustomApplicationFactory.m */; };
+		26F258141922233B00046A8E /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F258021922233B00046A8E /* CustomFileManager.m */; };
+		26F258151922233B00046A8E /* local_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258051922233B00046A8E /* local_config.xml */; };
+		26F258161922233B00046A8E /* master_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258061922233B00046A8E /* master_config.xml */; };
+		26F258171922233B00046A8E /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258081922233B00046A8E /* applicationproperties.xml */; };
+		26F258181922233B00046A8E /* InitialOutcomes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F258091922233B00046A8E /* InitialOutcomes.xml */; };
+		26F258191922233B00046A8E /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580A1922233B00046A8E /* resources.xml */; };
+		26F2581A1922233B00046A8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580C1922233B00046A8E /* InfoPlist.strings */; };
+		26F2581B1922233B00046A8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2580E1922233B00046A8E /* main.m */; };
+		26F2581C1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */; };
+		C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC206183379E000A189F1 /* libsqlite3.0.dylib */; };
+		C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC208183379F300A189F1 /* AVFoundation.framework */; };
+		C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC20A18337A1000A189F1 /* QuartzCore.framework */; };
+		C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		03F090F213C7550500A58AE7 /* mobbl-sample-shared-resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobbl-sample-shared-resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F239B513C6FFFB00E9BD32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03F239B713C6FFFB00E9BD32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		26F257F11922186B00046A8E /* shared-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "shared-resources"; path = "../../target/generated-resources/shared-resources"; sourceTree = "<group>"; };
+		26F257FB1922233B00046A8E /* FireInitialOutcomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireInitialOutcomes.h; sourceTree = "<group>"; };
+		26F257FC1922233B00046A8E /* FireInitialOutcomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireInitialOutcomes.m; sourceTree = "<group>"; };
+		26F257FD1922233B00046A8E /* CustomApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationController.h; sourceTree = "<group>"; };
+		26F257FE1922233B00046A8E /* CustomApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationController.m; sourceTree = "<group>"; };
+		26F257FF1922233B00046A8E /* CustomApplicationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationFactory.h; sourceTree = "<group>"; };
+		26F258001922233B00046A8E /* CustomApplicationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomApplicationFactory.m; sourceTree = "<group>"; };
+		26F258011922233B00046A8E /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
+		26F258021922233B00046A8E /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
+		26F258051922233B00046A8E /* local_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = local_config.xml; sourceTree = "<group>"; };
+		26F258061922233B00046A8E /* master_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = master_config.xml; sourceTree = "<group>"; };
+		26F258081922233B00046A8E /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
+		26F258091922233B00046A8E /* InitialOutcomes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = InitialOutcomes.xml; sourceTree = "<group>"; };
+		26F2580A1922233B00046A8E /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
+		26F2580D1922233B00046A8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26F2580E1922233B00046A8E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mobbl-sample-shared-resources-Info.plist"; sourceTree = "<group>"; };
+		26F258101922233B00046A8E /* mobbl-sample-shared-resources.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobbl-sample-shared-resources.pch"; sourceTree = "<group>"; };
+		C71AC206183379E000A189F1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C71AC208183379F300A189F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C71AC20A18337A1000A189F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "mobbl-core-framework.framework"; path = "../../target/xcode-deps/frameworks/Debug/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F090DE13C7550500A58AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */,
+				C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */,
+				03F090DF13C7550500A58AE7 /* SystemConfiguration.framework in Frameworks */,
+				C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */,
+				03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */,
+				03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */,
+				C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */,
+				03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03F239A613C6FFFA00E9BD32 = {
+			isa = PBXGroup;
+			children = (
+				26F257F11922186B00046A8E /* shared-resources */,
+				C74DAA4B183269D300580179 /* mobbl-sample-shared-resources */,
+				03F239B413C6FFFB00E9BD32 /* Frameworks */,
+				03F239B213C6FFFB00E9BD32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03F239B213C6FFFB00E9BD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F090F213C7550500A58AE7 /* mobbl-sample-shared-resources.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F239B413C6FFFB00E9BD32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */,
+				C71AC20A18337A1000A189F1 /* QuartzCore.framework */,
+				C71AC208183379F300A189F1 /* AVFoundation.framework */,
+				C71AC206183379E000A189F1 /* libsqlite3.0.dylib */,
+				03F0877813C7492B00A58AE7 /* SystemConfiguration.framework */,
+				03F239B513C6FFFB00E9BD32 /* UIKit.framework */,
+				03F239B713C6FFFB00E9BD32 /* Foundation.framework */,
+				03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26F257F91922233B00046A8E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26F257FA1922233B00046A8E /* Actions */,
+				26F257FD1922233B00046A8E /* CustomApplicationController.h */,
+				26F257FE1922233B00046A8E /* CustomApplicationController.m */,
+				26F257FF1922233B00046A8E /* CustomApplicationFactory.h */,
+				26F258001922233B00046A8E /* CustomApplicationFactory.m */,
+				26F258011922233B00046A8E /* CustomFileManager.h */,
+				26F258021922233B00046A8E /* CustomFileManager.m */,
+			);
+			name = Classes;
+			path = "mobbl-sample-shared-resources/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		26F257FA1922233B00046A8E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				26F257FB1922233B00046A8E /* FireInitialOutcomes.h */,
+				26F257FC1922233B00046A8E /* FireInitialOutcomes.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		26F258031922233B00046A8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26F258041922233B00046A8E /* Config */,
+				26F258071922233B00046A8E /* Documents */,
+			);
+			name = Resources;
+			path = "mobbl-sample-shared-resources/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		26F258041922233B00046A8E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				26F258051922233B00046A8E /* local_config.xml */,
+				26F258061922233B00046A8E /* master_config.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		26F258071922233B00046A8E /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				26F258081922233B00046A8E /* applicationproperties.xml */,
+				26F258091922233B00046A8E /* InitialOutcomes.xml */,
+				26F2580A1922233B00046A8E /* resources.xml */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		26F2580B1922233B00046A8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26F2580C1922233B00046A8E /* InfoPlist.strings */,
+				26F2580E1922233B00046A8E /* main.m */,
+				26F2580F1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist */,
+				26F258101922233B00046A8E /* mobbl-sample-shared-resources.pch */,
+			);
+			name = "Supporting Files";
+			path = "mobbl-sample-shared-resources/Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		C74DAA4B183269D300580179 /* mobbl-sample-shared-resources */ = {
+			isa = PBXGroup;
+			children = (
+				26F257F91922233B00046A8E /* Classes */,
+				26F258031922233B00046A8E /* Resources */,
+				26F2580B1922233B00046A8E /* Supporting Files */,
+			);
+			name = "mobbl-sample-shared-resources";
+			path = "mobbl-sample-shared-resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F090D913C7550500A58AE7 /* mobbl-sample-shared-resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F090EF13C7550500A58AE7 /* Build configuration list for PBXNativeTarget "mobbl-sample-shared-resources" */;
+			buildPhases = (
+				03F090DA13C7550500A58AE7 /* Sources */,
+				03F090DE13C7550500A58AE7 /* Frameworks */,
+				03F090E413C7550500A58AE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mobbl-sample-shared-resources";
+			productName = "itude-mobile-ios-pharmeon-pilservice";
+			productReference = 03F090F213C7550500A58AE7 /* mobbl-sample-shared-resources.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F239A813C6FFFA00E9BD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Itude Mobile B.V., The Netherlands";
+			};
+			buildConfigurationList = 03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-sample-shared-resources" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				da,
+				de,
+				es,
+				fi,
+				fr,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt,
+				ru,
+				sv,
+				zh_CN,
+				zh_TW,
+				English,
+			);
+			mainGroup = 03F239A613C6FFFA00E9BD32;
+			productRefGroup = 03F239B213C6FFFB00E9BD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F090D913C7550500A58AE7 /* mobbl-sample-shared-resources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F090E413C7550500A58AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F258181922233B00046A8E /* InitialOutcomes.xml in Resources */,
+				26F2581A1922233B00046A8E /* InfoPlist.strings in Resources */,
+				26F2581C1922233B00046A8E /* mobbl-sample-shared-resources-Info.plist in Resources */,
+				26F257F21922186B00046A8E /* shared-resources in Resources */,
+				26F258171922233B00046A8E /* applicationproperties.xml in Resources */,
+				26F258151922233B00046A8E /* local_config.xml in Resources */,
+				26F258161922233B00046A8E /* master_config.xml in Resources */,
+				26F258191922233B00046A8E /* resources.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F090DA13C7550500A58AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F2581B1922233B00046A8E /* main.m in Sources */,
+				26F258141922233B00046A8E /* CustomFileManager.m in Sources */,
+				26F258111922233B00046A8E /* FireInitialOutcomes.m in Sources */,
+				26F258131922233B00046A8E /* CustomApplicationFactory.m in Sources */,
+				26F258121922233B00046A8E /* CustomApplicationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26F2580C1922233B00046A8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26F2580D1922233B00046A8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F090F013C7550500A58AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-sample-shared-resources";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03F090F113C7550500A58AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-sample-shared-resources";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03F239E613C6FFFC00E9BD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=*]" = "-DDEBUG";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		03F239E713C6FFFC00E9BD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		BD1BDB791402902600303D2D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(inherited)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Distribution;
+		};
+		BD1BDB7D1402902600303D2D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"/**",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
+					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
+				);
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-all_load",
+				);
+				PRODUCT_NAME = "mobbl-sample-shared-resources";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F090EF13C7550500A58AE7 /* Build configuration list for PBXNativeTarget "mobbl-sample-shared-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F090F013C7550500A58AE7 /* Debug */,
+				03F090F113C7550500A58AE7 /* Release */,
+				BD1BDB7D1402902600303D2D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-sample-shared-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F239E613C6FFFC00E9BD32 /* Debug */,
+				03F239E713C6FFFC00E9BD32 /* Release */,
+				BD1BDB791402902600303D2D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F239A813C6FFFA00E9BD32 /* Project object */;
+}

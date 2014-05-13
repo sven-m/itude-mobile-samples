@@ -1,0 +1,4 @@
+/target
+## generic files to ignore
+*.DS_Store
+.*.swp

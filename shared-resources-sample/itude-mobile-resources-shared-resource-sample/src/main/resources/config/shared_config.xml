@@ -1,0 +1,36 @@
+<Configuration xmlns="http://itude.com/schemas/MB/1.0">
+  <Model>
+    <Domains>
+    </Domains>
+
+  	<Documents>
+	</Documents>
+  </Model>
+
+  <Controller>
+	<Actions>
+	</Actions>
+	
+	<Wiring>
+	    <Outcome origin="Controller" name="init" action="HOME" dialog="dialog1"/>
+	</Wiring>
+	
+  </Controller>
+
+  <View>
+      <Dialogs>
+          <Dialog name="dialog1" mode="STACK" title="1"/>
+	  </Dialogs>
+	  
+      <Page name="HOME" document="MBEmpty" title="Page title">
+          <Panel type="LIST">
+              <Panel type="SECTION" title="Section title">
+                  <Panel type="ROW">
+                      <Field type="LABEL" label="Field label title"/>
+                  </Panel>
+              </Panel>
+          </Panel>
+      </Page>
+      
+  </View>  
+</Configuration>

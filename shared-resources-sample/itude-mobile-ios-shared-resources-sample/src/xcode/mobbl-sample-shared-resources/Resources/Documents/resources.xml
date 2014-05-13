@@ -1,0 +1,6 @@
+<Resources>
+    <Resource id="config" url="file://master_config.xml"/>
+    <Resource id="endpoints" url="file://shared-resources/config/endpoints.xml"/>
+    
+    <Bundle languageCode="nl" url="file://shared-resources/texts-nl.xml"/>
+</Resources> 
