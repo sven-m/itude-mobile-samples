@@ -101,7 +101,7 @@
 		            <!--sdk>iphonesimulator</sdk-->
 		            <sdk>iphoneos</sdk>
     		    </sdks>
-    		    <target>mobbl-sample-app-shared-resources</target>
+    		    <target>mobbl-sample-shared-resources</target>
     	    	<skipVersionUpdate>true</skipVersionUpdate>
 			</configuration>
 	      </plugin>
