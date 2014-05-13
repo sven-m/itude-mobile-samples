@@ -185,7 +185,7 @@
 				26F2580B1922233B00046A8E /* Supporting Files */,
 			);
 			name = "mobbl-sample-shared-resources";
-			path = "mobbl-blueprint-app";
+			path = "mobbl-sample-shared-resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +309,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources.pch";
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -318,7 +318,7 @@
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
 				);
-				INFOPLIST_FILE = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -345,7 +345,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources.pch";
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
@@ -353,7 +353,7 @@
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
 				);
-				INFOPLIST_FILE = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -471,7 +471,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources.pch";
+				GCC_PREFIX_HEADER = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUGMOBBL;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
@@ -479,7 +479,7 @@
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Headers\"",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/PrivateHeaders\"",
 				);
-				INFOPLIST_FILE = "mobbl-blueprint-app/Supporting Files/mobbl-sample-shared-resources-Info.plist";
+				INFOPLIST_FILE = "mobbl-sample-shared-resources/Supporting Files/mobbl-sample-shared-resources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;

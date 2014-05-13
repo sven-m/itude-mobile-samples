@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'mobbl-blueprint-app' target in the 'mobbl-blueprint-app' project
+// Prefix header for all source files of the 'mobbl-sample-shared-resources' target in the 'mobbl-sample-shared-resources' project
 // 
 
 #import <Availability.h>
