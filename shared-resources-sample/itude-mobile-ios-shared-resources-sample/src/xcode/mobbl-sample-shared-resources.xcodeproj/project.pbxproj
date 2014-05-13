@@ -11,13 +11,13 @@
 		03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B513C6FFFB00E9BD32 /* UIKit.framework */; };
 		03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B713C6FFFB00E9BD32 /* Foundation.framework */; };
 		03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */; };
-		2604B518191CCF2500770D3A /* bp-resources in Resources */ = {isa = PBXBuildFile; fileRef = 2604B517191CCF2500770D3A /* bp-resources */; };
 		26F257E0191CDA9600046A8E /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257DF191CDA9600046A8E /* resources.xml */; };
 		26F257E2191CF4AC00046A8E /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257E1191CF4AC00046A8E /* applicationproperties.xml */; };
 		26F257E5191D08B700046A8E /* CustomApplicationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257E4191D08B700046A8E /* CustomApplicationFactory.m */; };
 		26F257EB1920F7FB00046A8E /* master_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EA1920F7FB00046A8E /* master_config.xml */; };
 		26F257ED1920F84100046A8E /* local_config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26F257EC1920F84100046A8E /* local_config.xml */; };
 		26F257F01921083600046A8E /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F257EF1921083600046A8E /* CustomFileManager.m */; };
+		26F257F21922186B00046A8E /* shared-resources in Resources */ = {isa = PBXBuildFile; fileRef = 26F257F11922186B00046A8E /* shared-resources */; };
 		C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC206183379E000A189F1 /* libsqlite3.0.dylib */; };
 		C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC208183379F300A189F1 /* AVFoundation.framework */; };
 		C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC20A18337A1000A189F1 /* QuartzCore.framework */; };
@@ -49,7 +49,6 @@
 		03F239B513C6FFFB00E9BD32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03F239B713C6FFFB00E9BD32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2604B517191CCF2500770D3A /* bp-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "bp-resources"; path = "../../target/generated-resources/bp-resources"; sourceTree = "<group>"; };
 		26F257DF191CDA9600046A8E /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
 		26F257E1191CF4AC00046A8E /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
 		26F257E3191D08B700046A8E /* CustomApplicationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomApplicationFactory.h; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		26F257EC1920F84100046A8E /* local_config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = local_config.xml; path = Config/local_config.xml; sourceTree = "<group>"; };
 		26F257EE1921083600046A8E /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
 		26F257EF1921083600046A8E /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
+		26F257F11922186B00046A8E /* shared-resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "shared-resources"; path = "../../target/generated-resources/shared-resources"; sourceTree = "<group>"; };
 		C71AC206183379E000A189F1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		C71AC208183379F300A189F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C71AC20A18337A1000A189F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -107,7 +107,7 @@
 		03F239A613C6FFFA00E9BD32 = {
 			isa = PBXGroup;
 			children = (
-				2604B517191CCF2500770D3A /* bp-resources */,
+				26F257F11922186B00046A8E /* shared-resources */,
 				C74DAA4B183269D300580179 /* mobbl-blueprint-app */,
 				03F239B413C6FFFB00E9BD32 /* Frameworks */,
 				03F239B213C6FFFB00E9BD32 /* Products */,
@@ -250,7 +250,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Itude Mobile B.V., The Netherlands";
 			};
-			buildConfigurationList = 03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-blueprint-app" */;
+			buildConfigurationList = 03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-sample-shared-resources" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -300,6 +300,7 @@
 				C7D44537188D1F4B00052D2C /* backButtonIconArrowWhite.png in Resources */,
 				C7D44538188D1F4B00052D2C /* backButtonIconArrowWhite@2x.png in Resources */,
 				C7D44539188D1F4B00052D2C /* database.db in Resources */,
+				26F257F21922186B00046A8E /* shared-resources in Resources */,
 				C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */,
 				C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */,
 				C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */,
@@ -309,7 +310,6 @@
 				26F257E0191CDA9600046A8E /* resources.xml in Resources */,
 				C74DAAD7183269D400580179 /* mobbl-blueprint-app-Info.plist in Resources */,
 				26F257ED1920F84100046A8E /* local_config.xml in Resources */,
-				2604B518191CCF2500770D3A /* bp-resources in Resources */,
 				C74DAAD5183269D400580179 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-blueprint-app" */ = {
+		03F239AB13C6FFFB00E9BD32 /* Build configuration list for PBXProject "mobbl-sample-shared-resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03F239E613C6FFFC00E9BD32 /* Debug */,
