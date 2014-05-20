@@ -49,14 +49,14 @@
 			<version>${core.lib.version}</version>
 			<type>apklib</type>
 		</dependency>
-    <dependency>
-      <groupId>com.itude.mobile.resources.mobbl</groupId>
-      <artifactId>mobbl-sample-shared-resources</artifactId>
+    	<dependency>
+      		<groupId>com.itude.mobile.resources.mobbl</groupId>
+			<artifactId>mobbl-sample-shared-resources</artifactId>
 			<version>${shared.resources.version}</version>
-      <classifier>resources</classifier>
-      <type>zip</type>
-      <scope>provided</scope>
-    </dependency>
+			<classifier>resources</classifier>
+			<type>zip</type>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<issueManagement>
@@ -93,7 +93,7 @@
 											android-maven-plugin
 										</artifactId>
 										<versionRange>
-											[3.7.0,)
+											[3.9.0-rc.1,)
 										</versionRange>
 										<goals>
 											<goal>proguard</goal>
@@ -126,7 +126,7 @@
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.9.0-rc.1</version>
 				<configuration>
 					<sdk>
 						<platform>19</platform>
@@ -156,31 +156,31 @@
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.5</version>
 			</plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-shared-resources</id>
-            <goals>
-              <goal>unpack-dependencies</goal>
-            </goals>
-            <phase>generate-resources</phase>
-            <configuration>
-              <outputDirectory>${project.build.directory}/generated-resources/assets/shared-resources</outputDirectory>
-              <includeArtifacIds>mobbl-sample-shared-resources</includeArtifacIds>
-              <includeGroupIds>com.itude.mobile.resources.mobbl</includeGroupIds>
-              <excludeTransitive>true</excludeTransitive>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+			<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-dependency-plugin</artifactId>
+        		<executions>
+					<execution>
+						<id>unpack-shared-resources</id>
+			            <goals>
+            				<goal>unpack-dependencies</goal>
+			            </goals>
+            			<phase>initialize</phase>
+			            <configuration>
+            				<outputDirectory>${project.build.directory}/generated-resources/assets/shared-resources</outputDirectory>
+				            <includeArtifacIds>mobbl-sample-shared-resources</includeArtifacIds>
+				            <includeGroupIds>com.itude.mobile.resources.mobbl</includeGroupIds>
+				            <excludeTransitive>true</excludeTransitive>
+			            </configuration>
+		        	</execution>
+        		</executions>
+			</plugin>
 		</plugins>
 	</build>
 
 	<properties>
-    <shared.resources.version>0.0.0.1-SNAPSHOT</shared.resources.version>
-		<core.lib.version>3.2.0.18</core.lib.version>
+    	<shared.resources.version>0.0.0.1-SNAPSHOT</shared.resources.version>
+		<core.lib.version>3.2.0.20</core.lib.version>
 		<android.version>4.4</android.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
