@@ -13,6 +13,7 @@
         
         <Wiring>
             <Outcome origin="Controller" name="init" action="home" dialog="home-dialog"/>
+            <Outcome origin="*" name="goto-other-page" action="other" dialog="home-dialog"/>
         </Wiring>
         
     </Controller>
@@ -22,15 +23,8 @@
             <Dialog name="home-dialog" mode="STACK" title="1"/>
         </Dialogs>
         
-        <Page name="home" document="MBEmpty" title="PageTitle">
-            <Panel type="LIST">
-                <Panel type="SECTION" title="SectionTitle">
-                    <Panel type="ROW">
-                        <Field type="LABEL" label="FieldLabelTitle"/>
-                    </Panel>
-                </Panel>
-            </Panel>
-        </Page>
+        <Page name="home" document="MBEmpty" />
+        <Page name="other" document="MBEmpty" />
         
     </View>  
 </Configuration>
