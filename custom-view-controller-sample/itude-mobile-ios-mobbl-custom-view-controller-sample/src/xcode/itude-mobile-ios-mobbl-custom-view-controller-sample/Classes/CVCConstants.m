@@ -15,6 +15,14 @@
  */
 
 NSString * const CVCConstantsPageNameHome = @"home";
-NSString * const CVCConstantsPageNameOther = @"other";
+NSString * const CVCConstantsPageNameDetail = @"detail";
 
-NSString * const CVCConstantsOutcomeNameGotoOtherPage = @"goto-other-page";
+NSString * const CVCConstantsOutcomeNameGotoDetailPage = @"goto-detail-page";
+
+NSString * const CVCConstantsDocumentPathCatalogPlantList       = @"PLANT";
+NSString * const CVCConstantsDocumentPathCatalogCommon          = @"COMMON[0]/@text()";
+NSString * const CVCConstantsDocumentPathCatalogBotanical       = @"BOTANICAL[0]/@text()";
+NSString * const CVCConstantsDocumentPathCatalogZone            = @"ZONE[0]/@text()";
+NSString * const CVCConstantsDocumentPathCatalogLight           = @"LIGHT[0]/@text()";
+NSString * const CVCConstantsDocumentPathCatalogPrice           = @"PRICE[0]/@text()";
+NSString * const CVCConstantsDocumentPathCatalogAvailability    = @"AVAILABILITY[0]/@text()";

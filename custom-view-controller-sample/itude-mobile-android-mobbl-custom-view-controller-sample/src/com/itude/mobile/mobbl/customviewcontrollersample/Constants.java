@@ -16,24 +16,48 @@
 
 package com.itude.mobile.mobbl.customviewcontrollersample;
 
-public final class Constants {
-	public static final class Page {
-		public static final class Name {
+public final class Constants
+{
+  public static final class Page
+  {
+    public static final class Name
+    {
 
-			public static final String HOME = "home";
+      public static final String HOME = "home";
+      public static final String DETAIL = "detail";
 
-		}
+    }
 
-	}
+  }
 
-	public static final class Outcome {
+  public static final class Outcome
+  {
 
-		public static final class Name {
+    public static final class Name
+    {
 
-			public static final String GOTO_OTHER_PAGE = "goto-other-page";
+      public static final String GOTO_DETAIL_PAGE = "goto-detail-page";
 
-		}
+    }
 
-	}
+  }
+
+  public static final class Path
+  {
+
+    public static final class Catalog
+    {
+
+      public static final String PLANT_LIST   = "PLANT";
+      public static final String COMMON       = "COMMON[0]/@text()";
+      public static final String BOTANICAL    = "BOTANICAL[0]/@text()";
+      public static final String ZONE         = "ZONE[0]/@text()";
+      public static final String LIGHT        = "LIGHT[0]/@text()";
+      public static final String PRICE        = "PRICE[0]/@text()";
+      public static final String AVAILABILITY = "AVAILABILITY[0]/@text()";
+
+    }
+
+  }
 
 }

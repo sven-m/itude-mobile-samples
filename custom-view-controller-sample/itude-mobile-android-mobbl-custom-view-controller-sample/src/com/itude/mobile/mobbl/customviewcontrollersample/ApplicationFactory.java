@@ -27,8 +27,9 @@ public class ApplicationFactory extends MBApplicationFactory {
 		@Override
 		protected void registerMappings() {
 			registerController(Constants.Page.Name.HOME, HomeController.class);
+      registerController(Constants.Page.Name.DETAIL, DetailViewController.class);
 
-			setDefaultController(DefaultViewController.class);
+      //			setDefaultController(DetailViewController.class);
 		}
 
 	};

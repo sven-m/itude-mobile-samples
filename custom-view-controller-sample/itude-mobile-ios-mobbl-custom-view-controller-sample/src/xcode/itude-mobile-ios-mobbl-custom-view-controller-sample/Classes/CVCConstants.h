@@ -15,6 +15,14 @@
  */
 
 extern NSString * const CVCConstantsPageNameHome;
-extern NSString * const CVCConstantsPageNameOther;
+extern NSString * const CVCConstantsPageNameDetail;
 
-extern NSString * const CVCConstantsOutcomeNameGotoOtherPage;
+extern NSString * const CVCConstantsOutcomeNameGotoDetailPage;
+
+extern NSString * const CVCConstantsDocumentPathCatalogPlantList;
+extern NSString * const CVCConstantsDocumentPathCatalogCommon;
+extern NSString * const CVCConstantsDocumentPathCatalogBotanical;
+extern NSString * const CVCConstantsDocumentPathCatalogZone;
+extern NSString * const CVCConstantsDocumentPathCatalogLight;
+extern NSString * const CVCConstantsDocumentPathCatalogPrice;
+extern NSString * const CVCConstantsDocumentPathCatalogAvailability;

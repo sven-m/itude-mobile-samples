@@ -25,8 +25,9 @@
 		26221232193F18140024FBF8 /* itude-mobile-ios-mobbl-custom-view-controller-sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26221222193F18140024FBF8 /* itude-mobile-ios-mobbl-custom-view-controller-sample-Info.plist */; };
 		26221233193F18140024FBF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26221224193F18140024FBF8 /* InfoPlist.strings */; };
 		26221234193F18140024FBF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26221226193F18140024FBF8 /* main.m */; };
-		266A1DB8199AA75A002D4E4B /* CVCDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A1DB6199AA75A002D4E4B /* CVCDefaultViewController.m */; };
-		266A1DB9199AA75A002D4E4B /* CVCDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266A1DB7199AA75A002D4E4B /* CVCDefaultViewController.xib */; };
+		266A1DB8199AA75A002D4E4B /* CVCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A1DB6199AA75A002D4E4B /* CVCDetailViewController.m */; };
+		266A1DB9199AA75A002D4E4B /* CVCDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266A1DB7199AA75A002D4E4B /* CVCDetailViewController.xib */; };
+		26CC73D919A240E60002F9CF /* CATALOG.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26CC73D819A240E60002F9CF /* CATALOG.xml */; };
 		26F5B0B5199AA2AA009168B8 /* CVCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F5B0B3199AA2AA009168B8 /* CVCHomeViewController.m */; };
 		26F5B0B6199AA2AA009168B8 /* CVCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F5B0B4199AA2AA009168B8 /* CVCHomeViewController.xib */; };
 		26F5B0B9199AA2FC009168B8 /* CVCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F5B0B8199AA2FC009168B8 /* CVCConstants.m */; };
@@ -59,9 +60,10 @@
 		26221223193F18140024FBF8 /* itude-mobile-ios-mobbl-custom-view-controller-sample.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "itude-mobile-ios-mobbl-custom-view-controller-sample.pch"; sourceTree = "<group>"; };
 		26221225193F18140024FBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26221226193F18140024FBF8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		266A1DB5199AA75A002D4E4B /* CVCDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCDefaultViewController.h; sourceTree = "<group>"; };
-		266A1DB6199AA75A002D4E4B /* CVCDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCDefaultViewController.m; sourceTree = "<group>"; };
-		266A1DB7199AA75A002D4E4B /* CVCDefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCDefaultViewController.xib; sourceTree = "<group>"; };
+		266A1DB5199AA75A002D4E4B /* CVCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCDetailViewController.h; sourceTree = "<group>"; };
+		266A1DB6199AA75A002D4E4B /* CVCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCDetailViewController.m; sourceTree = "<group>"; };
+		266A1DB7199AA75A002D4E4B /* CVCDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCDetailViewController.xib; sourceTree = "<group>"; };
+		26CC73D819A240E60002F9CF /* CATALOG.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CATALOG.xml; sourceTree = "<group>"; };
 		26F5B0B2199AA2AA009168B8 /* CVCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCHomeViewController.h; sourceTree = "<group>"; };
 		26F5B0B3199AA2AA009168B8 /* CVCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCHomeViewController.m; sourceTree = "<group>"; };
 		26F5B0B4199AA2AA009168B8 /* CVCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCHomeViewController.xib; sourceTree = "<group>"; };
@@ -147,9 +149,9 @@
 				26F5B0B4199AA2AA009168B8 /* CVCHomeViewController.xib */,
 				26F5B0B7199AA2EE009168B8 /* CVCConstants.h */,
 				26F5B0B8199AA2FC009168B8 /* CVCConstants.m */,
-				266A1DB5199AA75A002D4E4B /* CVCDefaultViewController.h */,
-				266A1DB6199AA75A002D4E4B /* CVCDefaultViewController.m */,
-				266A1DB7199AA75A002D4E4B /* CVCDefaultViewController.xib */,
+				266A1DB5199AA75A002D4E4B /* CVCDetailViewController.h */,
+				266A1DB6199AA75A002D4E4B /* CVCDetailViewController.m */,
+				266A1DB7199AA75A002D4E4B /* CVCDetailViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -179,6 +181,7 @@
 			children = (
 				26221218193F18140024FBF8 /* applicationproperties.xml */,
 				26221219193F18140024FBF8 /* resources.xml */,
+				26CC73D819A240E60002F9CF /* CATALOG.xml */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -289,8 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26221229193F18140024FBF8 /* Images.xcassets in Resources */,
+				26CC73D919A240E60002F9CF /* CATALOG.xml in Resources */,
 				2622122D193F18140024FBF8 /* resources.xml in Resources */,
-				266A1DB9199AA75A002D4E4B /* CVCDefaultViewController.xib in Resources */,
+				266A1DB9199AA75A002D4E4B /* CVCDetailViewController.xib in Resources */,
 				2622122C193F18140024FBF8 /* applicationproperties.xml in Resources */,
 				2622122F193F18140024FBF8 /* LaunchImage.png in Resources */,
 				26221231193F18140024FBF8 /* texts-en.xml in Resources */,
@@ -315,7 +319,7 @@
 				26221228193F18140024FBF8 /* CVCApplicationFactory.m in Sources */,
 				26221234193F18140024FBF8 /* main.m in Sources */,
 				26221227193F18140024FBF8 /* CVCApplicationController.m in Sources */,
-				266A1DB8199AA75A002D4E4B /* CVCDefaultViewController.m in Sources */,
+				266A1DB8199AA75A002D4E4B /* CVCDetailViewController.m in Sources */,
 				26F5B0B5199AA2AA009168B8 /* CVCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

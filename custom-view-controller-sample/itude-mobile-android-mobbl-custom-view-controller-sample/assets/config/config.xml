@@ -1,9 +1,39 @@
 <Configuration xmlns="http://itude.com/schemas/MB/1.0">
     <Model>
         <Domains>
+            <Domain name="Plant-Light" type="string">
+                <DomainValidator title="Mostly shady" value="Mostly Shady"/>
+                <DomainValidator title="Mostly sunny" value="Mostly Sunny"/>
+                <DomainValidator title="Sun/Shade" value="Sun or Shade"/>
+                <DomainValidator title="Shade only" value="Shade"/>
+                <DomainValidator title="Bring it on!" value="Sunny" />
+                <DomainValidator title="Light me up baby!" value="Sun" />
+            </Domain>
         </Domains>
         
         <Documents>
+            <Document name="CATALOG" dataManager="MBFileDataHandler">
+                <Element name="PLANT">
+                    <Element name="COMMON">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="BOTANICAL">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="ZONE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="LIGHT">
+                        <Attribute name="text()" type="Plant-Light"/>
+                    </Element>
+                    <Element name="PRICE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="AVAILABILITY">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                </Element>
+            </Document>
         </Documents>
     </Model>
     
@@ -12,8 +42,8 @@
         </Actions>
         
         <Wiring>
-            <Outcome origin="Controller" name="init" action="home" dialog="home-dialog"/>
-            <Outcome origin="*" name="goto-other-page" action="other" dialog="home-dialog"/>
+            <Outcome origin="Controller" name="init" action="home" dialog="home-dialog" />
+            <Outcome origin="*" name="goto-detail-page" action="detail" dialog="home-dialog" transferDocument="TRUE" />
         </Wiring>
         
     </Controller>
@@ -23,8 +53,8 @@
             <Dialog name="home-dialog" mode="STACK" title="1"/>
         </Dialogs>
         
-        <Page name="home" document="MBEmpty" />
-        <Page name="other" document="MBEmpty" />
+        <Page name="home" document="CATALOG" />
+        <Page name="detail" document="CATALOG/PLANT" />
         
     </View>  
 </Configuration>

@@ -17,7 +17,7 @@
 #import "CVCApplicationFactory.h"
 #import "CVCConstants.h"
 #import "CVCHomeViewController.h"
-#import "CVCDefaultViewController.h"
+#import "CVCDetailViewController.h"
 
 
 @implementation CVCApplicationFactory
@@ -25,20 +25,26 @@
 - (MBPage *)createPage:(MBPageDefinition *)definition document:(MBDocument *)document rootPath:(NSString *)rootPath viewState:(MBViewState)viewState withMaxBounds:(CGRect)bounds {
     
     id viewController = nil;
+    MBPage * page;
     
     if([CVCConstantsPageNameHome isEqualToString:definition.name]) {
         viewController = [[[CVCHomeViewController alloc] initWithNibName:nil bundle:nil] autorelease];
 	}
     
-    if (viewController == nil) {
-        viewController = [[[CVCDefaultViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    }
+    if([CVCConstantsPageNameDetail isEqualToString:definition.name]) {
+        viewController = [[[CVCDetailViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+	}
     
-    MBPage * const page = [[MBPage alloc] initWithDefinition:definition
-                                          withViewController:viewController
-                                                    document:document
-                                                    rootPath:rootPath
-                                                   viewState:viewState];
+    
+    if (viewController) {
+        page = [[MBPage alloc] initWithDefinition:definition
+                               withViewController:viewController
+                                         document:document
+                                         rootPath:rootPath
+                                        viewState:viewState];
+    } else {
+        page = [super createPage:definition document:document rootPath:rootPath viewState:viewState withMaxBounds:bounds];
+    }
     
     return page;
 

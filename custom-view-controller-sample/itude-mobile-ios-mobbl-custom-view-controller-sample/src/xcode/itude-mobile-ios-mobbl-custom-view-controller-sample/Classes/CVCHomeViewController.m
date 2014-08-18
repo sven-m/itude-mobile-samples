@@ -17,17 +17,82 @@
 #import "CVCHomeViewController.h"
 #import "CVCConstants.h"
 
-@interface CVCHomeViewController ()
+static NSString * const PlantCellIdentifier = @"PlantCellIdentifier";
+
+@interface CVCHomeViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+
+- (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
+- (NSArray *)dataItems;
+- (MBElement *)dataForIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
 @implementation CVCHomeViewController
 
-- (IBAction)nextPageButtonPressed:(id)sender {
-    MBOutcome *outcome = [[MBOutcome alloc] initWithOutcomeName:CVCConstantsOutcomeNameGotoOtherPage document:nil];
-    [[MBApplicationController currentInstance] handleOutcome:outcome];
-    [outcome release];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:PlantCellIdentifier];
 }
 
+
+- (void)dealloc {
+    [_tableView release];
+    [super dealloc];
+}
+
+#pragma mark - Table view datasource and delegate
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:PlantCellIdentifier forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:PlantCellIdentifier];
+    }
+    
+    [self configureCell:cell forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[self dataItems] count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger row = indexPath.row;
+    
+    NSString *itemPath = [NSString stringWithFormat:@"/%@[%d]", CVCConstantsDocumentPathCatalogPlantList, row];
+    
+    [self.page handleOutcome:CVCConstantsOutcomeNameGotoDetailPage withPathArgument:itemPath];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - Table view data helper methods
+
+- (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    
+    MBElement *element = [self dataForIndexPath:indexPath];
+    
+    cell.textLabel.text = [element valueForPath:CVCConstantsDocumentPathCatalogCommon];
+    cell.detailTextLabel.text = [element valueForPath:CVCConstantsDocumentPathCatalogBotanical];
+}
+
+- (MBElement *)dataForIndexPath:(NSIndexPath *)indexPath {
+    NSArray *dataItems = [self dataItems];
+    
+    return dataItems[indexPath.row];
+}
+
+- (NSArray *)dataItems {
+    NSArray *elements = [self.page.document valueForPath:CVCConstantsDocumentPathCatalogPlantList];
+    
+    return elements;
+}
 
 @end

@@ -16,37 +16,48 @@
 
 package com.itude.mobile.mobbl.customviewcontrollersample;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 
-import com.itude.mobile.mobbl.core.controller.MBApplicationController;
-import com.itude.mobile.mobbl.core.controller.MBOutcome;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 
-public class HomeController extends MBBasicViewController {
+public class HomeController extends MBBasicViewController
+{
+  @Override
+  protected ViewGroup buildInitialView(final LayoutInflater inflater)
+  {
+    final ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.page_home, null);
 
-	@Override
-	protected ViewGroup buildInitialView(final LayoutInflater inflater) {
-		final ViewGroup viewGroup = (ViewGroup) inflater.inflate(
-				R.layout.page_home, null);
+    final ListView listView = (ListView) viewGroup.findViewById(R.id.list_view);
 
-		final Button gotoOtherPageButton = (Button) viewGroup
-				.findViewById(R.id.goto_other_page);
+    final Map<String, Integer> itemPathsLayoutMap = new HashMap<String, Integer>();
+    itemPathsLayoutMap.put(Constants.Path.Catalog.COMMON, android.R.id.text1);
+    itemPathsLayoutMap.put(Constants.Path.Catalog.BOTANICAL, android.R.id.text2);
 
-		gotoOtherPageButton.setOnClickListener(new OnClickListener() {
+    final DocumentAdapter documentAdapter = new DocumentAdapter(getActivity(), getPage().getDocument(), Constants.Path.Catalog.PLANT_LIST,
+        android.R.layout.simple_list_item_2, itemPathsLayoutMap);
 
-			@Override
-			public void onClick(final View v) {
-				final MBOutcome outcome = new MBOutcome(
-						Constants.Outcome.Name.GOTO_OTHER_PAGE, null);
-				MBApplicationController.getInstance().handleOutcome(outcome);
-			}
-		});
+    listView.setAdapter(documentAdapter);
 
-		return viewGroup;
-	}
+    listView.setOnItemClickListener(new OnItemClickListener()
+    {
 
+      @Override
+      public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id)
+      {
+        final String path = "/" + documentAdapter.getItemPath(position);
+        getPage().handleOutcome(Constants.Outcome.Name.GOTO_DETAIL_PAGE, path);
+      }
+
+    });
+
+    return viewGroup;
+  }
 }

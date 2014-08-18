@@ -14,12 +14,6 @@
  * limitations under the License.
  */
 
-#import "CVCDefaultViewController.h"
-
-@interface CVCDefaultViewController ()
-
-@end
-
-@implementation CVCDefaultViewController
+@interface CVCDetailViewController : MBBasicViewController
 
 @end

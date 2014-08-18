@@ -4,16 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is a TextView in the Home View Controller" />
-
-    <Button
-        android:id="@+id/goto_other_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Goto next page" />
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>
