@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-@interface CVCHomeViewController : MBBasicViewController
+@interface CVCPlantListViewController : MBBasicViewController
 
 @end

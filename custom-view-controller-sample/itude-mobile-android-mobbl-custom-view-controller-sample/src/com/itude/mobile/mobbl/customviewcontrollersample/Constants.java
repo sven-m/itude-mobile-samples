@@ -23,8 +23,8 @@ public final class Constants
     public static final class Name
     {
 
-      public static final String HOME = "home";
-      public static final String DETAIL = "detail";
+      public static final String PLANT_LIST   = "plant-list";
+      public static final String PLANT_DETAIL = "plant-detail";
 
     }
 

@@ -1,4 +1,4 @@
-package com.itude.mobile.mobbl.customviewcontrollersample;
+package com.itude.mobile.mobbl.customviewcontrollersample.list;
 
 import java.util.HashMap;
 import java.util.List;

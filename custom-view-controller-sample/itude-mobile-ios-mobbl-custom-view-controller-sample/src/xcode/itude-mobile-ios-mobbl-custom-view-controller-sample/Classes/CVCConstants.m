@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-NSString * const CVCConstantsPageNameHome = @"home";
-NSString * const CVCConstantsPageNameDetail = @"detail";
+NSString * const CVCConstantsPageNameHome = @"plant-list";
+NSString * const CVCConstantsPageNameDetail = @"plant-detail";
 
 NSString * const CVCConstantsOutcomeNameGotoDetailPage = @"goto-detail-page";
 

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-#import "CVCHomeViewController.h"
+#import "CVCPlantListViewController.h"
 #import "CVCConstants.h"
 
 static NSString * const PlantCellIdentifier = @"PlantCellIdentifier";
 
-@interface CVCHomeViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CVCPlantListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 
@@ -29,7 +29,7 @@ static NSString * const PlantCellIdentifier = @"PlantCellIdentifier";
 
 @end
 
-@implementation CVCHomeViewController
+@implementation CVCPlantListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

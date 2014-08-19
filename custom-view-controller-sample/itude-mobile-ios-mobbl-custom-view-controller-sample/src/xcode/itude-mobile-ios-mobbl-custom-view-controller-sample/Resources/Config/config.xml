@@ -42,19 +42,19 @@
         </Actions>
         
         <Wiring>
-            <Outcome origin="Controller" name="init" action="home" dialog="home-dialog" />
-            <Outcome origin="*" name="goto-detail-page" action="detail" dialog="home-dialog" transferDocument="TRUE" />
+            <Outcome origin="Controller" name="init" action="plant-list" dialog="plant-dialog" />
+            <Outcome origin="*" name="goto-detail-page" action="plant-detail" dialog="plant-dialog" transferDocument="TRUE" />
         </Wiring>
         
     </Controller>
     
     <View>
         <Dialogs>
-            <Dialog name="home-dialog" mode="STACK" title="1"/>
+            <Dialog name="plant-dialog" mode="STACK" />
         </Dialogs>
         
-        <Page name="home" document="CATALOG" />
-        <Page name="detail" document="CATALOG/PLANT" />
+        <Page name="plant-list" document="CATALOG" />
+        <Page name="plant-detail" document="CATALOG/PLANT" />
         
     </View>
 </Configuration>

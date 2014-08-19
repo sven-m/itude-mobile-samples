@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.itude.mobile.mobbl.customviewcontrollersample;
+package com.itude.mobile.mobbl.customviewcontrollersample.detail;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -23,8 +23,14 @@ import android.widget.TextView;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 import com.itude.mobile.mobbl.core.model.MBDocument;
 import com.itude.mobile.mobbl.core.model.MBElement;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants;
+import com.itude.mobile.mobbl.customviewcontrollersample.R;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Path;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Path.Catalog;
+import com.itude.mobile.mobbl.customviewcontrollersample.R.id;
+import com.itude.mobile.mobbl.customviewcontrollersample.R.layout;
 
-public class DetailViewController extends MBBasicViewController {
+public class PlantDetailViewController extends MBBasicViewController {
 
 	@Override
 	protected ViewGroup buildInitialView(final LayoutInflater inflater) {

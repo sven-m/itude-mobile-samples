@@ -16,7 +16,7 @@
 
 #import "CVCApplicationFactory.h"
 #import "CVCConstants.h"
-#import "CVCHomeViewController.h"
+#import "CVCPlantListViewController.h"
 #import "CVCDetailViewController.h"
 
 
@@ -28,7 +28,7 @@
     MBPage * page;
     
     if([CVCConstantsPageNameHome isEqualToString:definition.name]) {
-        viewController = [[[CVCHomeViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+        viewController = [[[CVCPlantListViewController alloc] initWithNibName:nil bundle:nil] autorelease];
 	}
     
     if([CVCConstantsPageNameDetail isEqualToString:definition.name]) {

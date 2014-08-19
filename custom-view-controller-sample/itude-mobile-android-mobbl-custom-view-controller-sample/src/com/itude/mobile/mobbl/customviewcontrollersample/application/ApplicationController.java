@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.itude.mobile.mobbl.customviewcontrollersample;
+package com.itude.mobile.mobbl.customviewcontrollersample.application;
 
 import com.itude.mobile.mobbl.core.controller.MBApplicationController;
 import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;

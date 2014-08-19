@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.itude.mobile.mobbl.customviewcontrollersample;
+package com.itude.mobile.mobbl.customviewcontrollersample.list;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,8 +27,16 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants;
+import com.itude.mobile.mobbl.customviewcontrollersample.R;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Outcome;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Path;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Outcome.Name;
+import com.itude.mobile.mobbl.customviewcontrollersample.Constants.Path.Catalog;
+import com.itude.mobile.mobbl.customviewcontrollersample.R.id;
+import com.itude.mobile.mobbl.customviewcontrollersample.R.layout;
 
-public class HomeController extends MBBasicViewController
+public class PlantListViewController extends MBBasicViewController
 {
   @Override
   protected ViewGroup buildInitialView(final LayoutInflater inflater)
