@@ -1,15 +1,15 @@
-# Android MOBBL Custom View Controller Sample
+# iOS MOBBL Custom View Controller Sample
 
-This is a sample project that demonstrates the use of Android MOBBL with custom view controllers (fragments).
+This is a sample project that demonstrates the use of iOS MOBBL with custom view controllers (UIViewControllers).
 
 ## Usage
 
 This sample makes use of Maven in order to resolve dependencies (such as Android MOBBL). In order to resolve the dependencies, you should run:
 
-    $ cd itude-mobile-android-mobbl-custom-view-controller-sample
-    $ mvn clean install
+    $ cd itude-mobile-ios-mobbl-custom-view-controller-sample
+    $ mvn initialize
 
-Open up eclipse and run the app in your emulator or device.
+Open the Xcode project, build and run the app in your emulator or on your device.
 
 
 
