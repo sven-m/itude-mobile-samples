@@ -1,9 +1,3 @@
-<EndPoints xmlns="https://itude.com/schemas/MB/1.0">
-
-    <ResultListeners>
-        <!--ResultListener name="TimedOutResultListener" matchExpression="faultcode*0123456789"/-->
-    </ResultListeners>
-
+<EndPoints xmlns="https://itude.com/schemas/MB/2.0">
     <EndPoint documentOut="CATALOG" timeout="30" endPoint="http://www.w3schools.com/xml/plant_catalog.xml" cacheable="TRUE" ttl="60"/>
-
 </EndPoints>
