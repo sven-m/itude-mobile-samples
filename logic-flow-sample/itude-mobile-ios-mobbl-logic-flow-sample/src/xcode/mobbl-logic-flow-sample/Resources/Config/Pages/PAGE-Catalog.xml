@@ -2,12 +2,12 @@
     <View>
         <Page name="PAGE-Catalog" document="CATALOG" title="Plants from a webservice">
             <Panel type="LIST">
-                    <!-- the ForEach element creates a new for each element of type PLANT -->
-                    <ForEach value="/PLANT" suppressRowComponent="TRUE">
-                        <Panel type="ROW" path="." outcome="OUTCOME-PlantDetail">
-                            <Field type="LABEL" path="COMMON[0]/@text()"/>
-                        </Panel>
-                    </ForEach>
+                <!-- the ForEach element creates a new for each element of type PLANT -->
+                <ForEach value="/PLANT" suppressRowComponent="TRUE">
+                    <Panel type="ROW" path="." outcome="OUTCOME-PlantDetail">
+                        <Field type="LABEL" path="COMMON[0]/@text()"/>
+                    </Panel>
+                </ForEach>
             </Panel>
         </Page>
     </View>

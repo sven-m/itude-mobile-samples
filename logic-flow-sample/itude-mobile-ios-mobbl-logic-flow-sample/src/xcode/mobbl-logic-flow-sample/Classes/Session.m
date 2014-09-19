@@ -21,16 +21,16 @@
 #import "Session.h"
 
 @implementation Session
-@synthesize document = _document;
 
 - (void) dealloc
 {
-	[_document release];
+    self.document = nil;
 	[super dealloc];
 }
 
 -(MBDocument*) document {
-	if(_document == nil) _document = [[[MBDataManagerService sharedInstance] loadDocument:@"SessionState"] retain];
+	if(!_document)
+        _document = [[[MBDataManagerService sharedInstance] loadDocument:@"SessionState"] retain];
 	return _document;
 }
 
@@ -47,10 +47,10 @@
 }
 
 -(void) logOff {
-        // clear the session related attributes
-        MBDocument *sessionDoc = [self document];
-        [sessionDoc setValue:@"FALSE" forPath:@"Session[0]/@loggedIn"];
-        [[MBDataManagerService sharedInstance] storeDocument:sessionDoc];
+    // clear the session related attributes
+    MBDocument *sessionDoc = [self document];
+    [sessionDoc setValue:@"FALSE" forPath:@"Session[0]/@loggedIn"];
+    [[MBDataManagerService sharedInstance] storeDocument:sessionDoc];
 }
 
 @end

@@ -1,7 +1,9 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>	
         <Dialogs>
-			<Dialog name="DIALOG-home" mode="STACK" title="Home" />
+			<Dialog name="DIALOG-home" mode="STACK" title="Home">
+                <PageStack name="STACK-home" />
+            </Dialog>
 		</Dialogs>
 	</View>
 </Configuration>
