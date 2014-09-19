@@ -23,15 +23,7 @@
     [request setHTTPMethod:@"GET"];
     [request setValue:@"text/xml,application/xml" forHTTPHeaderField:@"Accept"];
     [request setValue:@"text/xml" forHTTPHeaderField:@"Content-Type"];
-    //
     [request setValue:@"gzip,deflate" forHTTPHeaderField:@"Accept-Encoding"];
 }
 
-/** uncomment to parse a JSON response instead of the default XML
-
- -(MBDocument *)documentWithData:(NSData *)data andDocumentName:(NSString *)documentName{
- return [[MBDocumentFactory sharedInstance] documentWithData:data withType:PARSER_JSON andDefinition:[[MBMetadataService sharedInstance] definitionForDocumentName:documentName]];
- 
- }
- */
 @end
