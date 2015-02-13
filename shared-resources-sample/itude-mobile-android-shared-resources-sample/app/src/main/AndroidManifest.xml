@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.1.0-SNAPSHOT" package="com.itude.mobile.mobbl.samples.sharedresources">
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="11"/>
 
     <application android:label="Mobbl Blueprint" android:name="com.itude.mobile.mobbl.samples.sharedresources.ApplicationController" android:theme="@style/Theme.AppCompat.Light">
 
