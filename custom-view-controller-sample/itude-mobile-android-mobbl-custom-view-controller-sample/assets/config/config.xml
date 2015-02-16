@@ -1,0 +1,61 @@
+<Configuration xmlns="http://itude.com/schemas/MB/1.0">
+    <Model>
+        <Domains>
+            <Domain name="Plant-Light" type="string">
+                <DomainValidator title="Mostly shady" value="Mostly Shady"/>
+                <DomainValidator title="Mostly sunny" value="Mostly Sunny"/>
+                <DomainValidator title="Sun/Shade" value="Sun or Shade"/>
+                <DomainValidator title="Shade only" value="Shade"/>
+                <DomainValidator title="Bring it on!" value="Sunny" />
+                <DomainValidator title="Light me up baby!" value="Sun" />
+            </Domain>
+        </Domains>
+        
+        <Documents>
+            <Document name="CATALOG" dataManager="MBFileDataHandler">
+                <Element name="PLANT">
+                    <Element name="COMMON">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="BOTANICAL">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="ZONE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="LIGHT">
+                        <Attribute name="text()" type="Plant-Light"/>
+                    </Element>
+                    <Element name="PRICE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="AVAILABILITY">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                </Element>
+            </Document>
+        </Documents>
+    </Model>
+    
+    <Controller>
+        <Actions>
+        </Actions>
+        
+        <Wiring>
+            <Outcome origin="Controller" name="init" action="plant-list" dialog="plant-dialog" />
+            <Outcome origin="*" name="goto-detail-page" action="plant-detail" dialog="plant-dialog" transferDocument="TRUE" />
+        </Wiring>
+        
+    </Controller>
+    
+    <View>
+        <Dialogs>
+            <Dialog name="plant-dialog" mode="STACK" />
+        </Dialogs>
+        
+        <Page name="plant-list" document="CATALOG" />
+        <Page name="plant-detail" document="CATALOG/PLANT" />
+        
+    </View>  
+</Configuration>
+
