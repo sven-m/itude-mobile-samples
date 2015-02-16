@@ -15,7 +15,7 @@ logic-flow-sample
 shared-resources-sample
 - How to use shared resources with Android and IOS
 
-view-controller-sample (Coming soon)
+view-controller-sample
 - How to override the default ViewController
 - How to react to a changed text field and store the data
 - How to detecting a completed outcome
