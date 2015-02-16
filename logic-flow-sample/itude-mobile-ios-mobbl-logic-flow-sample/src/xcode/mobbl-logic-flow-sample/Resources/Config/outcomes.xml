@@ -1,27 +1,21 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
 	<Controller>
         <Wiring>
-            
 			<!-- origin="Controller" tells the framework on which screen to start -->
-            <Outcome origin="Controller" name="init" action="PAGE-Login" dialog="DIALOG-home" noBackgroundProcessing="FALSE"/>
-            
+            <Outcome origin="Controller" name="init" action="PAGE-Login" stack="STACK-home" noBackgroundProcessing="FALSE"/>
             <!-- navigation from list to detail screen transferDocument ensures the same Document is used in both screens. If it is not specified the detail screens CATALOG document is separate from the list screen's copy of the CATALOG document. noBackgroundProcessing specifies not to construct PAGE-plant-detail in the background ( default behaviour ) -->
- 
             <Outcome origin="*" name="OUTCOME-LoggedIn" action="PAGE-LoggedIn" noBackgroundProcessing="TRUE" displayMode="REPLACE"/>
             <!-- if the user presses 'Stale plants' we use the defaults in endpoints.xml (cached for 60 seconds)-->
-            <Outcome origin="PAGE-LoggedIn" name="OUTCOME-Catalog" action="PAGE-Catalog" transferDocument="FALSE"/>
+            <Outcome origin="PAGE-LoggedIn"         name="OUTCOME-Catalog" action="PAGE-Catalog" transferDocument="FALSE"/>
             <!-- if the user presses 'Fresh Plants' we transfer the data that was loaded in the GetFreshPlants action  -->
             <Outcome origin="ACTION-GetFreshPlants" name="OUTCOME-Catalog" action="PAGE-Catalog" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
-
-            <Outcome origin="*" name="OUTCOME-PlantDetail" action="PAGE-PlantDetail" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
-
+            
+            <Outcome origin="*" name="OUTCOME-PlantDetail"      action="PAGE-PlantDetail"        transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-CheckCredentials" action="ACTION-CheckCredentials" transferDocument="TRUE"/>
-            <Outcome origin="*" name="OUTCOME-LoginError" action="PAGE-LoginError" transferDocument="TRUE" displayMode="REPLACE"/>
-
-            <Outcome origin="*" name="OUTCOME-GetFreshPlants" action="ACTION-GetFreshPlants"/>
-            <Outcome origin="*" name="OUTCOME-LogOff" action="ACTION-LogOff" />
-            <Outcome origin="*" name="OUTCOME-Login" action="PAGE-Login" displayMode="REPLACE"/>
-
+            <Outcome origin="*" name="OUTCOME-LoginError"       action="PAGE-LoginError"         transferDocument="TRUE" displayMode="REPLACE"/>
+            <Outcome origin="*" name="OUTCOME-GetFreshPlants"   action="ACTION-GetFreshPlants"/>
+            <Outcome origin="*" name="OUTCOME-LogOff"           action="ACTION-LogOff" />
+            <Outcome origin="*" name="OUTCOME-Login"            action="PAGE-Login" displayMode="REPLACE"/>
         </Wiring>
     </Controller>
 </Configuration>

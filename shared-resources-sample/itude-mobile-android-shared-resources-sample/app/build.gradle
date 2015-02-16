@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.itude.mobile.mobbl.samples.sharedresources"
+        minSdkVersion 9
+        targetSdkVersion 11
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    sourceSets {
+
+        main {
+            assets.srcDirs += "$buildDir/shared_assets"
+        }
+    }
+
+    lintOptions {
+        lintConfig file("lint.xml")
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'LICENSE.txt'
+    }
+}
+
+configurations {
+    shared_resource
+}
+
+dependencies {
+    shared_resource 'com.itude.mobile.resources.mobbl:mobbl-sample-shared-resources:0.0.0.1-SNAPSHOT:resources@zip'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile ('com.itude.mobile.android.mobbl:android-mobbl-lib:5.0.0@aar') {
+        transitive=true
+    }
+}
+
+task cleanSharedResources(type: Delete) {
+    delete "$buildDir/shared_assets/shared-resources/"
+}
+
+task copySharedResources(type: Copy) {
+    from {
+        configurations.shared_resource.collect { zipTree(it) }
+    }
+    into "$buildDir/shared_assets/shared-resources/"
+}
+
+clean.dependsOn(cleanSharedResources)
+preBuild.dependsOn(copySharedResources)
