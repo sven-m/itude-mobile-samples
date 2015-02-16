@@ -1,7 +1,0 @@
-<Configuration xmlns="http://itude.com/schemas/MB/2.0">
-	<Controller>
-        <Wiring>
-            <Outcome origin="*" name="exception" action="PAGE-exception" displayMode="MODALFORMSHEETWITHCLOSEBUTTON"/>
-        </Wiring>
-    </Controller>
-</Configuration>

@@ -9,20 +9,14 @@
 /* Begin PBXBuildFile section */
 		00F7262118B3CA3A009A0710 /* PlantDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F725F418B3CA3A009A0710 /* PlantDataService.m */; };
 		00F7262218B3CA3A009A0710 /* WebserviceApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F725F618B3CA3A009A0710 /* WebserviceApplicationController.m */; };
-		00F7262318B3CA3A009A0710 /* actions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725F918B3CA3A009A0710 /* actions.xml */; };
 		00F7262418B3CA3A009A0710 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FA18B3CA3A009A0710 /* config.xml */; };
 		00F7262518B3CA3A009A0710 /* dialogs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FB18B3CA3A009A0710 /* dialogs.xml */; };
 		00F7262618B3CA3A009A0710 /* documents.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FC18B3CA3A009A0710 /* documents.xml */; };
 		00F7262718B3CA3A009A0710 /* domains.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FD18B3CA3A009A0710 /* domains.xml */; };
-		00F7262818B3CA3A009A0710 /* OUTCOME-exception.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FE18B3CA3A009A0710 /* OUTCOME-exception.xml */; };
 		00F7262918B3CA3A009A0710 /* outcomes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F725FF18B3CA3A009A0710 /* outcomes.xml */; };
 		00F7262A18B3CA3A009A0710 /* PAGE-catalog.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260118B3CA3A009A0710 /* PAGE-catalog.xml */; };
 		00F7262B18B3CA3A009A0710 /* PAGE-plant-detail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260218B3CA3A009A0710 /* PAGE-plant-detail.xml */; };
-		00F7262C18B3CA3A009A0710 /* pages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260318B3CA3A009A0710 /* pages.xml */; };
-		00F7262D18B3CA3A009A0710 /* DOC-exception.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260518B3CA3A009A0710 /* DOC-exception.xml */; };
-		00F7262E18B3CA3A009A0710 /* PAGE-exception.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260618B3CA3A009A0710 /* PAGE-exception.xml */; };
 		00F7262F18B3CA3A009A0710 /* applicationproperties.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260818B3CA3A009A0710 /* applicationproperties.xml */; };
-		00F7263018B3CA3A009A0710 /* CATALOG.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260918B3CA3A009A0710 /* CATALOG.xml */; };
 		00F7263118B3CA3A009A0710 /* endpoints.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260A18B3CA3A009A0710 /* endpoints.xml */; };
 		00F7263218B3CA3A009A0710 /* resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260B18B3CA3A009A0710 /* resources.xml */; };
 		00F7263318B3CA3A009A0710 /* ApplicationIcon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F7260E18B3CA3A009A0710 /* ApplicationIcon-72.png */; };
@@ -42,10 +36,10 @@
 		03F090E013C7550500A58AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B513C6FFFB00E9BD32 /* UIKit.framework */; };
 		03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B713C6FFFB00E9BD32 /* Foundation.framework */; };
 		03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */; };
+		17EAB8BA19C9BA5200164434 /* mobbl-core-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EAB8B919C9BA5100164434 /* mobbl-core-framework.framework */; };
 		C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC206183379E000A189F1 /* libsqlite3.0.dylib */; };
 		C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC208183379F300A189F1 /* AVFoundation.framework */; };
 		C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71AC20A18337A1000A189F1 /* QuartzCore.framework */; };
-		C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */; };
 		C7D44531188D1F4B00052D2C /* backButtonArrowInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */; };
 		C7D44532188D1F4B00052D2C /* backButtonArrowInverted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */; };
 		C7D44533188D1F4B00052D2C /* backButtonCheveron.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D44523188D1F4B00052D2C /* backButtonCheveron.png */; };
@@ -69,22 +63,16 @@
 		00F725F418B3CA3A009A0710 /* PlantDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantDataService.m; sourceTree = "<group>"; };
 		00F725F518B3CA3A009A0710 /* WebserviceApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceApplicationController.h; sourceTree = "<group>"; };
 		00F725F618B3CA3A009A0710 /* WebserviceApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebserviceApplicationController.m; sourceTree = "<group>"; };
-		00F725F918B3CA3A009A0710 /* actions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = actions.xml; sourceTree = "<group>"; };
 		00F725FA18B3CA3A009A0710 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		00F725FB18B3CA3A009A0710 /* dialogs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dialogs.xml; sourceTree = "<group>"; };
 		00F725FC18B3CA3A009A0710 /* documents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = documents.xml; sourceTree = "<group>"; };
 		00F725FD18B3CA3A009A0710 /* domains.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = domains.xml; sourceTree = "<group>"; };
-		00F725FE18B3CA3A009A0710 /* OUTCOME-exception.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "OUTCOME-exception.xml"; sourceTree = "<group>"; };
 		00F725FF18B3CA3A009A0710 /* outcomes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = outcomes.xml; sourceTree = "<group>"; };
-		00F7260118B3CA3A009A0710 /* PAGE-catalog.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "PAGE-catalog.xml"; sourceTree = "<group>"; };
-		00F7260218B3CA3A009A0710 /* PAGE-plant-detail.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "PAGE-plant-detail.xml"; sourceTree = "<group>"; };
-		00F7260318B3CA3A009A0710 /* pages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pages.xml; sourceTree = "<group>"; };
-		00F7260518B3CA3A009A0710 /* DOC-exception.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "DOC-exception.xml"; sourceTree = "<group>"; };
-		00F7260618B3CA3A009A0710 /* PAGE-exception.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "PAGE-exception.xml"; sourceTree = "<group>"; };
-		00F7260818B3CA3A009A0710 /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = applicationproperties.xml; sourceTree = "<group>"; };
-		00F7260918B3CA3A009A0710 /* CATALOG.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CATALOG.xml; sourceTree = "<group>"; };
-		00F7260A18B3CA3A009A0710 /* endpoints.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = endpoints.xml; sourceTree = "<group>"; };
-		00F7260B18B3CA3A009A0710 /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = resources.xml; sourceTree = "<group>"; };
+		00F7260118B3CA3A009A0710 /* PAGE-catalog.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "PAGE-catalog.xml"; path = "Pages/PAGE-catalog.xml"; sourceTree = "<group>"; };
+		00F7260218B3CA3A009A0710 /* PAGE-plant-detail.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "PAGE-plant-detail.xml"; path = "Pages/PAGE-plant-detail.xml"; sourceTree = "<group>"; };
+		00F7260818B3CA3A009A0710 /* applicationproperties.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = applicationproperties.xml; path = ../Documents/applicationproperties.xml; sourceTree = "<group>"; };
+		00F7260A18B3CA3A009A0710 /* endpoints.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = endpoints.xml; path = ../Documents/endpoints.xml; sourceTree = "<group>"; };
+		00F7260B18B3CA3A009A0710 /* resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = resources.xml; path = ../Documents/resources.xml; sourceTree = "<group>"; };
 		00F7260E18B3CA3A009A0710 /* ApplicationIcon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplicationIcon-72.png"; sourceTree = "<group>"; };
 		00F7260F18B3CA3A009A0710 /* ApplicationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplicationIcon.png; sourceTree = "<group>"; };
 		00F7261018B3CA3A009A0710 /* ApplicationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplicationIcon@2x.png"; sourceTree = "<group>"; };
@@ -104,10 +92,10 @@
 		03F239B513C6FFFB00E9BD32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03F239B713C6FFFB00E9BD32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03F239B913C6FFFB00E9BD32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17EAB8B919C9BA5100164434 /* mobbl-core-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "mobbl-core-framework.framework"; sourceTree = "<group>"; };
 		C71AC206183379E000A189F1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		C71AC208183379F300A189F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C71AC20A18337A1000A189F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "mobbl-core-framework.framework"; path = "../../target/xcode-deps/frameworks/Debug/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework"; sourceTree = "<group>"; };
 		C7D44521188D1F4B00052D2C /* backButtonArrowInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrowInverted.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted.png"; sourceTree = "<group>"; };
 		C7D44522188D1F4B00052D2C /* backButtonArrowInverted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonArrowInverted@2x.png"; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonArrowInverted@2x.png"; sourceTree = "<group>"; };
 		C7D44523188D1F4B00052D2C /* backButtonCheveron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonCheveron.png; path = "../../target/xcode-deps/frameworks/Release/com.itude.mobile.ios.mobbl/mobbl-core-framework/mobbl-core-framework.framework/Versions/A/Resources/backButtonCheveron.png"; sourceTree = "<group>"; };
@@ -131,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D4451E188D0CA800052D2C /* mobbl-core-framework.framework in Frameworks */,
 				C71AC207183379E000A189F1 /* libsqlite3.0.dylib in Frameworks */,
 				03F090DF13C7550500A58AE7 /* SystemConfiguration.framework in Frameworks */,
 				C71AC20B18337A1000A189F1 /* QuartzCore.framework in Frameworks */,
@@ -139,6 +126,7 @@
 				03F090E113C7550500A58AE7 /* Foundation.framework in Frameworks */,
 				C71AC209183379F300A189F1 /* AVFoundation.framework in Frameworks */,
 				03F090E213C7550500A58AE7 /* CoreGraphics.framework in Frameworks */,
+				17EAB8BA19C9BA5200164434 /* mobbl-core-framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				00F725F818B3CA3A009A0710 /* Config */,
-				00F7260718B3CA3A009A0710 /* Documents */,
 				00F7260C18B3CA3A009A0710 /* Images */,
 				00F7261618B3CA3A009A0710 /* Texts */,
 				00F7261818B3CA3A009A0710 /* Xibs */,
@@ -181,47 +168,18 @@
 		00F725F818B3CA3A009A0710 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				00F725F918B3CA3A009A0710 /* actions.xml */,
+				00F7260818B3CA3A009A0710 /* applicationproperties.xml */,
 				00F725FA18B3CA3A009A0710 /* config.xml */,
 				00F725FB18B3CA3A009A0710 /* dialogs.xml */,
 				00F725FC18B3CA3A009A0710 /* documents.xml */,
 				00F725FD18B3CA3A009A0710 /* domains.xml */,
-				00F725FE18B3CA3A009A0710 /* OUTCOME-exception.xml */,
+				00F7260A18B3CA3A009A0710 /* endpoints.xml */,
 				00F725FF18B3CA3A009A0710 /* outcomes.xml */,
-				00F7260018B3CA3A009A0710 /* Pages */,
-				00F7260318B3CA3A009A0710 /* pages.xml */,
-				00F7260418B3CA3A009A0710 /* SystemConfig */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		00F7260018B3CA3A009A0710 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
 				00F7260118B3CA3A009A0710 /* PAGE-catalog.xml */,
 				00F7260218B3CA3A009A0710 /* PAGE-plant-detail.xml */,
-			);
-			path = Pages;
-			sourceTree = "<group>";
-		};
-		00F7260418B3CA3A009A0710 /* SystemConfig */ = {
-			isa = PBXGroup;
-			children = (
-				00F7260518B3CA3A009A0710 /* DOC-exception.xml */,
-				00F7260618B3CA3A009A0710 /* PAGE-exception.xml */,
-			);
-			path = SystemConfig;
-			sourceTree = "<group>";
-		};
-		00F7260718B3CA3A009A0710 /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				00F7260818B3CA3A009A0710 /* applicationproperties.xml */,
-				00F7260918B3CA3A009A0710 /* CATALOG.xml */,
-				00F7260A18B3CA3A009A0710 /* endpoints.xml */,
 				00F7260B18B3CA3A009A0710 /* resources.xml */,
 			);
-			path = Documents;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		00F7260C18B3CA3A009A0710 /* Images */ = {
@@ -303,7 +261,7 @@
 		03F239B413C6FFFB00E9BD32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7D4451D188D0CA800052D2C /* mobbl-core-framework.framework */,
+				17EAB8B919C9BA5100164434 /* mobbl-core-framework.framework */,
 				C71AC20A18337A1000A189F1 /* QuartzCore.framework */,
 				C71AC208183379F300A189F1 /* AVFoundation.framework */,
 				C71AC206183379E000A189F1 /* libsqlite3.0.dylib */,
@@ -406,7 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F7262C18B3CA3A009A0710 /* pages.xml in Resources */,
 				00F7263B18B3CA3A009A0710 /* MBDatePicker.xib in Resources */,
 				00F7262518B3CA3A009A0710 /* dialogs.xml in Resources */,
 				00F7263A18B3CA3A009A0710 /* texts-nl.xml in Resources */,
@@ -420,7 +377,6 @@
 				00F7263218B3CA3A009A0710 /* resources.xml in Resources */,
 				C7D44534188D1F4B00052D2C /* backButtonCheveron@2x.png in Resources */,
 				00F7262918B3CA3A009A0710 /* outcomes.xml in Resources */,
-				00F7262818B3CA3A009A0710 /* OUTCOME-exception.xml in Resources */,
 				00F7263518B3CA3A009A0710 /* ApplicationIcon@2x.png in Resources */,
 				00F7263318B3CA3A009A0710 /* ApplicationIcon-72.png in Resources */,
 				00F7262718B3CA3A009A0710 /* domains.xml in Resources */,
@@ -436,20 +392,16 @@
 				C7D44539188D1F4B00052D2C /* database.db in Resources */,
 				C7D4453B188D1F4B00052D2C /* icon_font_down.png in Resources */,
 				C7D4453C188D1F4B00052D2C /* icon_font_down@2x.png in Resources */,
-				00F7263018B3CA3A009A0710 /* CATALOG.xml in Resources */,
 				C7D4453D188D1F4B00052D2C /* icon_font_up.png in Resources */,
 				00F7262F18B3CA3A009A0710 /* applicationproperties.xml in Resources */,
 				C7D4453E188D1F4B00052D2C /* icon_font_up@2x.png in Resources */,
 				C7D4453F188D1F4B00052D2C /* MBDatePicker.nib in Resources */,
 				00F7263C18B3CA3A009A0710 /* MBPicker.xib in Resources */,
 				00F7263F18B3CA3A009A0710 /* mobbl-webservice-sample-Info.plist in Resources */,
-				00F7262E18B3CA3A009A0710 /* PAGE-exception.xml in Resources */,
 				00F7262A18B3CA3A009A0710 /* PAGE-catalog.xml in Resources */,
 				00F7262418B3CA3A009A0710 /* config.xml in Resources */,
-				00F7262318B3CA3A009A0710 /* actions.xml in Resources */,
 				C7D44540188D1F4B00052D2C /* MBPicker.nib in Resources */,
 				00F7263118B3CA3A009A0710 /* endpoints.xml in Resources */,
-				00F7262D18B3CA3A009A0710 /* DOC-exception.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +441,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -525,6 +478,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mobbl-webservice-sample/Supporting Files/mobbl-webservice-sample.pch";
@@ -645,6 +599,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"\"${PROJECT_DIR}/../../target/xcode-deps/frameworks/${BUILD_STYLE}/com.itude.mobile.ios.mobbl/mobbl-core-framework\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mobbl-webservice-sample/Supporting Files/mobbl-webservice-sample.pch";

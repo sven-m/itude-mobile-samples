@@ -19,8 +19,8 @@
 //  Created by Robin Puthli on 18-02-2014.
 
 
-@interface Session : MBSession{
-    MBDocument *_document;
+@interface Session : MBSession {
+
 }
 
 - (void) logOn;

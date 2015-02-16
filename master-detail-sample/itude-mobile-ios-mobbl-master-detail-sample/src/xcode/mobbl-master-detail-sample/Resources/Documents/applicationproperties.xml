@@ -1,4 +1,3 @@
 <Application>
 	<Property name="localeCode" value="nl_NL"/>
-    <Property name="styleScheme" value="default"/>
 </Application>

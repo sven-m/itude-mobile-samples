@@ -20,22 +20,18 @@
 @implementation WebserviceApplicationController
 
 // support 3.x
--(void) applicationDidFinishLaunching:(UIApplication *)application {
+-(void) applicationDidFinishLaunching:(UIApplication *)application
+{
 	[self application:application didFinishLaunchingWithOptions:nil];
 }
 
 // for 4.x and above
-- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     [[MBDataManagerService sharedInstance] registerDataHandler:[PlantDataService new] withName:@"PlantDataHandler"];
-    
     // subclass the ApplicationFactory and inject it here to add Custom Actions and ViewControllers later on.
 	[super startApplication:[MBApplicationFactory sharedInstance]];
 	return YES;
-}
-
-- (void)dealloc
-{
-    [super dealloc];
 }
 
 @end
